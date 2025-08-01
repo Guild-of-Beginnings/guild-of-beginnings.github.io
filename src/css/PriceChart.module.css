@@ -1,0 +1,52 @@
+.price-chart {
+    width: 100%;
+    /* height: 100%; */
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.price-chart table {
+    width: 100%;
+    /* border-collapse: collapse; */
+    text-align: center;
+}
+.price-chart table tbody {
+    border: 1px solid var(--secondary-color);
+    border-radius: 1rem;
+}
+.price-chart table th {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.5rem;
+}
+.price-chart table th:first-child {
+    background-color: var(--background-color);
+}
+.price-chart table tbody tr:last-child {
+    /* border: 1px solid var(--secondary-color); */
+}
+.price-chart table tr td {
+    padding: 0.5rem;
+}
+.price-chart table tr td:first-child {
+    text-align: left;
+    padding-left: 2rem;
+}
+.price-chart table tbody tr:nth-child(2n) {
+    /* padding: 0.5rem; */
+    /* border-bottom: 1px solid var(--border-color); */
+    background-color: var(--lightest-secondary-color);
+}
+
+@media (max-width: 563px) {
+    .price-chart {
+        /* font-size: 0.8rem; */
+        width: 100%;
+        overflow-x: auto;
+    }
+    .price-chart table {
+        min-width: 500px;
+        width: 100%;
+        /* Keep table layout for clarity, allow horizontal scroll */
+    }
+}

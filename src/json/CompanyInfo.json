@@ -1,0 +1,35 @@
+{
+    "name": "Guild of Beginnings",
+    "description": "Guild of Beginnings is a platform that connects students with experienced game developers for personalized tutoring sessions.",
+    "website": "https://www.guildofbeginnings.com",
+    "email": "info@guildofbeginnings.com",
+    "phone": "424-231-3756",
+    "book": {
+        "email": "schedule@guildofbeginnings.com",
+        "waitlist": true
+    },
+    "refunds": {
+        "email": "refund@guildofbeginnings.com",
+        "subject": "REFUND REQUEST"
+    },
+    "privacyPolicy": {
+        "effectiveDate": "July 18, 2025",
+        "lastUpdated": "July 18, 2025",
+        "policyUrl": "/privacy-policy"
+    },
+    "termsOfService": {
+        "effectiveDate": "July 18, 2025",
+        "lastUpdated": "July 18, 2025",
+        "termsUrl": "/terms-of-service"
+    },
+    "socialMediaLinks": {
+        "facebook": "FB-TBD",
+        "twitter": "X-TBD",
+        "instagram": "I-TBD",
+        "linkedin": "LI-TBD",
+        "discord": "https://discord.gg/UKjBpKSPWB"
+    },
+    "logoUrl": "/images/logo.png",
+    "logoWhiteUrl": "/GameTutorLogo2.png",
+    "faviconUrl": "/images/favicon.ico"
+}

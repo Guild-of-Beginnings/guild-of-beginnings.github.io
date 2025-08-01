@@ -1,0 +1,97 @@
+{
+    "faqs": [
+        {
+            "title": "Getting Started",
+            "questions": [
+                {
+                    "title": "How do I get started?",
+                    "description": "Getting started is easy! Simply schedule a free consultation by visiting our booking page. During the consultation, we'll discuss your goals and how we can help you achieve them. Your first step into the guild begins here!"
+                },
+                {
+                    "title": "I just want to make games as a hobby, is this still right for me?",
+                    "description": "Yes! Whether you're a hobbyist or aiming for a professional career, our services are crafted to fit your unique journey. We tailor our approach to fit your individual needs and interests."
+                },
+                {
+                    "title": "What age groups do you work with?",
+                    "description": "We proudly welcome learners of all ages! Whether you're a young aspiring creator or an adult looking to level up your skills, our programs are designed to support your quest. For participants under 18, we just ask that a parent or legal guardian provides their permission so we can ensure a safe and supportive experience."
+                }
+            ]
+        },
+        {
+            "title": "Services & Offerings",
+            "questions": [
+                {
+                    "title": "What services do you offer?",
+                    "description": "We provide a wide range of services, including one-on-one coaching, game design consultations, and programming tutorials. Discover the perfect fit for your goals on our services page."
+                },
+                {
+                    "title": "Do you offer in-person, online, or hybrid tutoring sessions?",
+                    "description": "We connect adventurers from realms far and wide via online sessions, connecting you with expert guidance from anywhere in the world. Enjoy the flexibility and convenience of learning on your terms!"
+                },
+                {
+                    "title": "Do you offer group sessions or workshops?",
+                    "description": "In order to focus on a truly personalized learning experience, we exclusively offer one-on-one sessions. This ensures you receive the individualized attention and tailored guidance you need to achieve your goals."
+                },
+                {
+                    "title": "Do you give homework or practice assignments?",
+                    "description": "We provide engaging practice tasks to help you master new skills between sessions. These assignments aren't graded like traditional schoolwork, as they're custom-tailored to your learning plan and designed to accelerate your progress. Every task brings you closer to your goals!"
+                },
+                {
+                    "title": "Do you help with school or university game dev assignments?",
+                    "description": "While we do not directly assist with completing school or university assignments (to respect academic integrity policies), we can help you understand the concepts and skills needed to complete them. Our focus is on empowering you to learn and grow as a game developer, so you pursue your goals with confidence!"
+                },
+                {
+                    "title": "Which game engines and tools do you support?",
+                    "description": "We proudly support a wide variety of industry-leading game engines, tools, and creative software! For the most up-to-date list of everything we currently offer, check out our services page. If you don't see your favorite tool listed, just ask during your free consultation and we're happy to explore it with you!"
+                }
+            ]
+        },
+        {
+            "title": "Booking & Policies",
+            "questions": [
+                {
+                    "title": "I've started a lesson plan. How do I book a session?",
+                    "description": "Contact us by phone, send us an email, or book your session instantly through our convenient widget, all of which are on the booking page."
+                },
+                {
+                    "title": "How long is a typical session?",
+                    "description": "Most sessions are a focused 60 minutes, but we're happy to adjust to your needs. Our goal is to provide a productive and engaging learning experience that fits your schedule."
+                },
+                {
+                    "title": "Can I cancel or reschedule my session?",
+                    "description": "Absolutely! Life happens, and we get it. You can cancel or reschedule your session up to 24 hours in advance. For more information, please review our cancellation policy on the booking page."
+                },
+                {
+                    "title": "Are sessions recorded?",
+                    "description": "Yes, we record sessions for internal quality assurance, helping us improve your learning experience. These recordings are strictly for our internal use and are never shared externally. For privacy and to maintain a focused environment, we do not allow students to record sessions."
+                }
+            ]
+        },
+        {
+            "title": "Technical Requirements",
+            "questions": [
+                {
+                    "title": "What platform do you use for online sessions?",
+                    "description": "We use **Google Meet** to deliver seamless, high-quality online sessions. This ensures you enjoy a smooth, interactive learning experience no matter where you are!"
+                },
+                {
+                    "title": "Do I need any special software or equipment?",
+                    "description": "Most students just need a gaming-ready laptop or desktop. If you're unsure, bring it up during your free consultation and we'll help you get set up with everything you need!"
+                }
+            ]
+        },
+        {
+            "title": "Payments & Support",
+            "questions": [
+                {
+                    "title": "What payment methods do you accept?",
+                    "description": "We currently only accept **Venmo** for payments. It's fast, secure, and simple. Payment information will be collected when you book your sessions, so you can focus on the quest ahead while we handle the details."
+                },
+                {
+                    "title": "How do I contact support?",
+                    "description": "We're here for you! Reach out by phone, email, or join our vibrant Discord community for real-time support and inspiration. Your questions are always welcome!"
+                }
+            ]
+        }
+    ]
+}

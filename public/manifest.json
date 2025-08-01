@@ -1,0 +1,16 @@
+{
+  "short_name": "Guild of Beginnings",
+  "name": "Guild of Beginnings | Start Your Game Dev Journey Today!",
+  "icons": [
+    {
+      "src": "WebIcon.png",
+      "type": "image/png",
+      "sizes": "128x128"
+    }
+  ],
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "theme_color": "#1a1a2e",
+  "background_color": "#f0f0f0"
+}

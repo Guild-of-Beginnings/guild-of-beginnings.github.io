@@ -1,0 +1,57 @@
+:root {
+    --shadow-width: 2px;
+}
+
+.marquee-container {
+    width: 100%;
+    overflow: hidden;
+    /* border-radius: 1rem; */
+}
+
+.marquee-slider {
+    display: flex;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+.marquee-slider img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+.marquee-slider-content {
+    position: relative;
+}
+
+.marquee-overlay-text {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: white;
+    padding: 2rem;
+    font-size: 4rem;
+    box-sizing: border-box;
+    text-shadow: var(--shadow-width) var(--shadow-width) 0 black,
+                 calc(-1 * var(--shadow-width)) var(--shadow-width) 0 black,
+                 var(--shadow-width) calc(-1 * var(--shadow-width)) 0 black,
+                 calc(-1 * var(--shadow-width)) calc(-1 * var(--shadow-width)) 0 black,
+                 0 var(--shadow-width) 0 black,
+                 var(--shadow-width) 0 0 black,
+                 0 calc(-1 * var(--shadow-width)) 0 black,
+                 calc(-1 * var(--shadow-width)) 0 0 black;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    font-family: "Crimson Pro", serif;
+}
+
+@media(max-width: 767px) {
+    .marquee-slider img {
+        height: 200px;
+    }
+    .marquee-overlay-text {
+        font-size: 2.5rem;
+    }
+}

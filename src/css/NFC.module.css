@@ -1,0 +1,45 @@
+.nfc-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 30rem;
+    background-color: var(--lightest-primary-color);
+    border-radius: 1rem;
+    border: 1px solid var(--primary-color);
+}
+.nfc-container a {
+    /* text-decoration: none; */
+    color: var(--primary-color);
+}
+.nfc-container a:hover {
+    /* text-decoration: none; */
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+.nfc-container button {
+    margin-top: 2rem;
+    width: 50%;
+}
+.nfc-container p i {
+    color: var(--primary-color);
+    margin-right: 0.5rem;
+    min-width: 1.5rem;
+}
+
+.nfc-info {
+    width: 100%;
+    text-align: center;
+}
+.nfc-info img {
+    border: 1px solid var(--primary-color);
+}
+
+.nfc-image {
+    width: 100%;
+    max-width: 10rem;
+    height: auto;
+    border-radius: 50%;
+    margin: 1rem auto;
+}

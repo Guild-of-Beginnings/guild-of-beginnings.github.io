@@ -1,0 +1,276 @@
+{
+    "services" : [
+        {
+            "id": "unity",
+            "currently-offered": true,
+            "featured": true,
+            "name": "Scrolls of Unity",
+            "subtitle": "Every journey starts with a scroll. Let's chart your Unity path together!",
+            "short-description": "Unroll the Scrolls of Unity and take your first steps into the world of game development. Whether you're curious about 2D or 3D, this path offers hands-on, one-on-one guidance to help you build your first projects, explore Unity's tools, and spark your creative journey.",
+            "description": [
+                "Chart your course through the Realm of Unity with a guide by your side. Each session is a one-on-one expedition built around your pace, goals, and style. From your first lines of C# to crafting dynamic gameplay systems, every lesson is tailored to help you grow with purpose and direction.",
+                "Forge the essentials: clean coding practices, smart physics, responsive animations, and interactive game mechanics. As you travel deeper, you'll pick up the tools of real-world development: structured systems, practical debugging, and hands-on testing that strengthens the player's experience.",
+                "You choose when to travel. With fully flexible scheduling and expert guidance on version control, you'll not only build games, you'll gain the confidence and skills to carry them across the finish line. The Scrolls await! Are you ready to turn your ideas into living, playable worlds?"
+            ],
+            "featured-description": [
+                "Unlock your potential with a personalized tutoring plan built just for you. Through one-on-one sessions, you'll master the Unity Engine fundamentals, C# scripting, and core game design principles. Whether you're just starting out or looking to sharpen your skills, each lesson is tailored to your pace and goals, ensuring steady progress and real-world understanding.",
+                "From building interactive gameplay systems to implementing smart game AI, this plan dives deep into the practical side of development. You'll learn how to structure efficient code, work with physics systems, and bring your game to life with responsive animation integration, all while following clean development practices. Hands-on testing techniques are built in every step of the way, helping you catch bugs early and improve player experience.",
+                "Scheduling is fully flexible, so you can learn on your time without the stress. And with built-in guidance on version control, you'll be equipped with professional workflows from day one. If you're looking to turn your game ideas into playable, polished experiences, this is your next step."
+            ],
+            "image": "UnityFundamentals4.png",
+            "featured-alt-text": "A screenshot of the Unity Editor showing a dimly lit scene with a character in black clothing hunched outside of a doorway with a light above them and a ladder and barrel nearby.",
+            "price": 100,
+            "priceType": "per session",
+            "session-length": "1 hour",
+            "topics": [
+                {
+                    "title": "Unity Fundamentals",
+                    "description": "Get a solid foundation in Unity, one of the world's leading real-time development platforms. Whether you're new to game development or switching engines, we'll guide you through the Unity Editor, scene setup, components, and prefabs with practical, hands-on exercises. You'll gain the confidence to navigate projects, build scenes, and understand how everything fits together in a real production workflow.",
+                    "image": "UnityFundamentals4.png",
+                    "display": true
+                },
+                {
+                    "title": "Game Design Fundamentals",
+                    "description": "Learn the art of creating games that are not only fun but intuitive and user-friendly. We'll cover the essentials of game design theory, player feedback, onboarding, and interface layout. Whether it's designing engaging core loops or building clean gameplay mechanics, you'll develop the skills to make your game both playable and enjoyable from start to finish.",
+                    "image": "GameDesignFundamentals2.png",
+                    "display": true
+                },
+                {
+                    "title": "Testing Fundamentals",
+                    "description": "Become a more efficient and effective developer by mastering the tools and techniques for finding and fixing bugs fast. Learn how to use Unity's debugging tools, log analysis, and profiler, along with structured testing approaches to ensure your game is stable and polished. No more wasting time on mysterious crashes or spaghetti code issues.",
+                    "image": "TestingFundamentals.png",
+                    "display": true
+                },
+                {
+                    "title": "C# Programming",
+                    "description": "Unlock the full power of Unity with C# Programming (pronounced \"C Sharp\"). We'll help you go from zero to fluent in writing game logic, creating interactivity, and architecting your systems the right way. Learn core programming concepts, Unity's scripting API, and best practices that will help you code smarter, cleaner, and more efficiently. This is where your games truly come to life.",
+                    "image": "CSharp2.png",
+                    "display": true
+                },
+                {
+                    "title": "Game AI",
+                    "description": "Build intelligent behaviors for enemies, NPCs, and gameplay systems using Unity's AI tools. Learn pathfinding with NavMesh, decision-making through state machines, and even how to create reactive AI that challenges the player in meaningful ways. We'll tailor the AI depth to match your project, whether it's simple patrol routes or complex tactical opponents.",
+                    "image": "GameAI.png",
+                    "display": true
+                },
+                {
+                    "title": "Physics",
+                    "description": "Make your world feel responsive and grounded with Unity's powerful physics system. We'll explore Rigidbody dynamics, collision detection, forces, gravity, and more. Whether you're building a fast-paced platformer or a puzzle game with precise interactions, you'll learn how to make physics work for your design, not against it.",
+                    "image": "Physics.png",
+                    "display": true
+                },
+                {
+                    "title": "Animation",
+                    "description": "Bring your game world to life with smooth, expressive motion. Whether you're working with 2D sprites or 3D rigs, you'll learn how to animate characters and objects using Unity's animation tools and Animator Controller. From simple transitions to complex animation states, we'll show you how to add energy and clarity to your game's visuals.",
+                    "image": "Animation.png",
+                    "display": true
+                },
+                {
+                    "title": "Version Control",
+                    "description": "Whether you're working alone or in a team, version control is your safety net. We'll guide you through version tracking tools and workflows that protect your project from data loss and help you manage changes over time. Learn how to stay organized, roll back mistakes, and collaborate smoothly with others, all without missing a beat.",
+                    "image": "VersionControl2.png",
+                    "display": true
+                }
+            ]
+        },
+        {
+            "id": "unreal",
+            "currently-offered": true,
+            "featured": false,
+            "name": "Scrolls of Unreal",
+            "subtitle": "Every journey starts with a scroll. Let's chart your Unreal path together!",
+            "short-description": "Discover the Scrolls of Unreal and learn the foundations of Unreal Engine through personalized, one-on-one support. Whether you're exploring Blueprints or just starting with C++, this path helps you get familiar with the tools and build confidence as you begin your development adventure.",
+            "description": [
+                "Step into the world of Unreal with your own path and personal guide. Whether you're just setting foot in the engine or seeking to sharpen your edge, this one-on-one tutoring journey is shaped entirely around your experience, ambitions, and creative vision.",
+                "Together, we'll explore Unreal's powerful magic: Blueprints and C++, level design, AI systems, animation, and platform builds, each skill tied to real, hands-on progress. You'll learn not just how to use Unreal, but how to wield it like a seasoned builder of worlds.",
+                "Your journey, your rhythm. With a flexible path and practical challenges drawn from real development, you'll gain more than knowledge. You'll gain mastery, momentum, and the power to bring your ideas to life."
+            ],
+            "featured-description": [
+                "Unlock your potential with a personalized tutoring plan built just for you. Through one-on-one sessions, you'll master the Unity Engine fundamentals, C# scripting, and core game design principles. Whether you're just starting out or looking to sharpen your skills, each lesson is tailored to your pace and goals, ensuring steady progress and real-world understanding.",
+                "From building interactive gameplay systems to implementing smart game AI, this plan dives deep into the practical side of development. You'll learn how to structure efficient code, work with physics systems, and bring your game to life with responsive animation integration, all while following clean development practices. Hands-on testing techniques are built in every step of the way, helping you catch bugs early and improve player experience.",
+                "Scheduling is fully flexible, so you can learn on your time without the stress. And with built-in guidance on version control, you'll be equipped with professional workflows from day one. If you're serious about turning your game ideas into playable, polished experiences, this is your next step."
+            ],
+            "image": "",
+            "price": 100,
+            "priceType": "per session",
+            "session-length": "1 hour",
+            "topics": [
+                {
+                    "title": "UE Fundamentals",
+                    "description": "Begin your Unreal journey with a strong foundation in the engine behind many of today's top-tier games. Learn to navigate the editor, understand levels, actors, components, and the essential systems that drive gameplay. Whether you're starting fresh or switching from another engine, we'll help you master the tools and workflows that make Unreal tick.",
+                    "image": "UEFundamentals.png",
+                    "display": true
+                },
+                {
+                    "title": "Game Design Fundamentals",
+                    "description": "Design games that are as intuitive as they are engaging. Learn how to apply core game design principles and craft player experiences that feel polished and professional. From menus to HUDs to user flows, we help you design with players in mind.",
+                    "image": "GameDesignFundamentals2.png",
+                    "display": true
+                },
+                {
+                    "title": "Testing Fundamentals",
+                    "description": "Get ahead of bugs before they become blockers. Learn how to use Unreal's debugging tools like output log, breakpoints, and on-screen debugging. We'll also cover in-editor testing, play-in-editor workflows, and methods for validating systems before they go live.",
+                    "image": "UETestFundamentals.png",
+                    "display": true
+                },
+                {
+                    "title": "C++ and Blueprints",
+                    "description": "Wield Unreal's dual powerhouses, Blueprints and C++, to shape your gameplay systems from both sides of the craft. Learn how to build gameplay systems visually with Blueprints, then go deeper with C++ to unlock advanced functionality, custom actors, and performance-driven solutions. We'll show you how these two systems work together so you can create clean, scalable, and flexible game logic with confidence. Whether you're aiming for rapid prototyping or full-scale development, this balanced approach gives you the best of both worlds.",
+                    "image": "UECppAndBlueprints.png",
+                    "display": true
+                },
+                {
+                    "title": "Game AI",
+                    "description": "Craft reactive, intelligent NPCs using Unreal's AI systems, from loyal companions to cunning foes. You'll explore Behavior Trees, State Trees, Blackboards, EQS (Environment Query System), and AI Controllers to craft intelligent enemies, companions, or ambient AI. Whether you need a basic guard patrol or a tactical enemy, we'll teach you how to bring it to life.",
+                    "image": "UEGameAI.png",
+                    "display": true
+                },
+                {
+                    "title": "Physics",
+                    "description": "Create more immersive gameplay with Unreal's physics systems. Learn how to use physics bodies, collision channels, constraints, and force applications. From kinematics to realistic movement, we'll help you understand and control how your game world behaves under the laws of physics.",
+                    "image": "UEPhysics.png",
+                    "display": true
+                },
+                {
+                    "title": "Animation",
+                    "description": "Bring your characters and creatures to life with powerful animation tools in Unreal. Explore animation blueprints, blend spaces, and state machines. Whether it's a walk cycle or complex combat animations, you'll learn how to tie animation into gameplay for dynamic results.",
+                    "image": "UEAnimation2.png",
+                    "display": true
+                },
+                {
+                    "title": "Version Control",
+                    "description": "Whether you're working alone or in a team, version control is your safety net. We'll guide you through version tracking tools and workflows that protect your project from data loss and help you manage changes over time. Learn how to stay organized, roll back mistakes, and collaborate smoothly with others, all without missing a beat.",
+                    "image": "VersionControl2.png",
+                    "display": true
+                }
+            ]
+        },
+        {
+            "id": "game_programming",
+            "currently-offered": false,
+            "featured": false,
+            "name": "Echoes of the Programmer",
+            "subtitle": "Start your journey with the fundamentals of code!",
+            "short-description": "Learn the essential skills every programmer needs. No prior experience required! This beginner-friendly path introduces you to core programming concepts like variables, loops, and logic in a way that's easy to follow and fun to explore. Whether you're aiming to build games or just curious about how code works, this is where it all begins. Your first steps into the world of programming echo with potential."
+        },
+        {
+            "id": "game_design",
+            "currently-offered": false,
+            "featured": false,
+            "name": "Prologue of the Designer",
+            "subtitle": "Discover what makes a game fun and how to shape it!",
+            "short-description": "Game design is more than great ideas, it's about creating meaningful experiences. In this beginner track, you'll learn how to think like a designer by exploring game mechanics, player motivation, balance, and the creative decisions behind unforgettable games. Perfect for those who love storytelling, strategy, or just tinkering with how things work. Every world starts with a design. Let's create yours."
+        }
+    ],
+    "primary-services" : [
+        "unity",
+        "unreal"
+    ],
+    "services-coming-soon": [
+        "game_programming",
+        "game_design"
+    ],
+    "pricing-offers": [
+        {
+            "currently-offered": true,
+            "title": "One Payment",
+            "title-subtag": "+ More!",
+            "description": "Pay in full up-front and unlock unbeatable value! Not only do you **save 10%**, but you'll also receive a **fully customized sandbox project (a $1,000 value) included absolutely free** with your learning plan. Jumpstart your journey with the ultimate personalized experience, designed to help you succeed faster and smarter!",
+            "discount": 0.10,
+            "show-total": true,
+            "include-intro-sessions": true,
+            "include-full-plan": true,
+            "include-sandbox-project": true,
+            "discount-future-plan": 0.10
+        },
+        {
+            "currently-offered": true,
+            "title": "Two Payments",
+            "description": "Split your payment into two easy installments (half now, half later) and enjoy a **10% discount**! Get started right away with less upfront cost, while unlocking all the benefits of our personalized tutoring plan.",
+            "discount": 0.10,
+            "show-total": true,
+            "include-intro-sessions": true,
+            "include-full-plan": true,
+            "include-sandbox-project": false,
+            "discount-future-plan": 0.10
+        },
+        {
+            "currently-offered": true,
+            "title": "Pay As You Go",
+            "description": "Prefer maximum flexibility? With our Pay As You Go option, you can book sessions one at a time for just $100 each with no upfront commitment required. Enjoy expert guidance at your own pace, whenever you're ready to learn!",
+            "discount": 0,
+            "show-total": false,
+            "include-intro-sessions": true,
+            "include-full-plan": true,
+            "include-sandbox-project": false,
+            "discount-future-plan": 0,
+            "append-total": "*"
+        },
+        {
+            "currently-offered": false,
+            "title": "Intro Sessions",
+            "description": "Not sure if we're the right fit? Try your first two sessions for just **$100**! If you decide to continue within a month, that $100 goes straight toward your full learning plan, so you get a risk-free head start on your game development journey.",
+            "discount": 0,
+            "show-total": false,
+            "include-intro-sessions": true,
+            "include-full-plan": false,
+            "include-sandbox-project": false,
+            "discount-future-plan": 0,
+            "replace-total": "**"
+        }
+    ],
+    "addons": [
+        {
+            "currently-offered": true,
+            "title": "Sandbox Project",
+            "description": "Unlock your full learning potential with an exclusive Sandbox Project! This hands-on, fully customized project is designed to reinforce and expand on the concepts covered in your sessions directly inside the engine. Dive in, experiment, and master new skills faster with a practical, interactive environment built just for you. It's the ultimate way to turn knowledge into real-world results!",
+            "price": 1000,
+            "priceType": "",
+            "show-total": true
+        },
+        {
+            "currently-offered": true,
+            "title": "Practice Sessions (1 session)",
+            "description": "Supercharge your progress with an exclusive practice session! After completing your learning plan, book an extra session within 1 month to reinforce key concepts, tackle lingering questions, or polish your skills with expert guidance. It's the perfect way to lock in your knowledge and keep your momentum going strong!",
+            "price": 90,
+            "priceType": "per session",
+            "show-total": true
+        },
+        {
+            "currently-offered": true,
+            "title": "Practice Sessions (3 sessions)",
+            "description": "Strengthen your understanding of the topics covered in your learning plan with a bundle of three focused practice sessions. After completing your plan, schedule these sessions within 1 month to review and reinforce key concepts, clarify any lingering questions, and ensure you have a solid grasp of the material. It's an effective way to build confidence and retain what you've learned.",
+            "price": 250,
+            "priceType": "",
+            "show-total": true
+        }
+    ],
+    "benefits": [
+        {
+            "title": "One-on-one sessions",
+            "description": "Skip the crowded lecture halls and cutscenes! This is real-time, one-on-one mentoring with a guide who's walked the path. Each session is tailored to your goals, your pace, and your project. Get answers, overcome roadblocks, and level up with purpose.",
+            "display": true,
+            "image": "OneOnOneSessions.png"
+        },
+        {
+            "title": "Personalized learning plans",
+            "description": "Your learning path is built just for you. No cookie-cutter curriculum and no guessing what to study next. Whether you're prototyping a first game or building a polished portfolio, your sessions evolve with you every step of the way.",
+            "display": true,
+            "image": "PersonalizedLessons.png"
+        },
+        {
+            "title": "Flexible scheduling",
+            "description": "Every questing schedule is unique. That's why sessions are built around your time, not ours. Prefer evening sprints? Weekend explorations? Or a schedule that shifts week to week? We'll adapt, so your journey continues without the burnout.",
+            "display": true,
+            "image": "FlexibleScheduling2.png"
+        }
+    ],
+    "fees": [
+        {
+            "title": "Lesson Planning Fee",
+            "description": "Lesson Planning Fee is a one-time fee to cover the time spent creating your personalized learning plan.",
+            "price": 200,
+            "priceType": ""
+        }
+    ]
+}

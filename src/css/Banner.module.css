@@ -1,0 +1,36 @@
+.logo {
+    height: 3rem;
+    cursor: pointer;
+}
+
+.header_style {
+    font-style: italic;
+    color: var(--primary-color);
+}
+
+.subtitle_style {
+    font-style: italic;
+    font-size: x-large;
+    color: var(--secondary-color);
+}
+
+.toggleThemeButton {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 10;
+    padding: 0.5rem 0.75rem;
+    border-radius: 1rem;
+    border: none;
+    background: #eee;
+    cursor: pointer;
+    color: black;
+    width: 10rem;
+}
+
+@media (max-width: 767px) {
+    .logo {
+        height: 3rem;
+        /* width: 100%; */
+    }
+}

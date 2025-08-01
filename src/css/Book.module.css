@@ -1,0 +1,41 @@
+.calendly-inline-widget-custom {
+    min-width: 20rem;
+    min-height: 50rem;
+}
+
+.calendly-inline-widget-custom iframe {
+    min-width: 20rem;
+    min-height: 50rem;
+}
+
+.refund-schedule-table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 2rem auto;
+    text-align: center;
+    table-layout: fixed;
+}
+.refund-schedule-table tbody {
+    border: 1px solid var(--secondary-color);
+    border-radius: 1rem;
+}
+.refund-schedule-table th {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.5rem;
+}
+.refund-schedule-table tbody tr:last-child {
+    border: 1px solid var(--secondary-color);
+}
+.refund-schedule-table tr td {
+    padding: 0.5rem;
+}
+.refund-schedule-table tbody tr:nth-child(2n) {
+    background-color: var(--lightest-secondary-color);
+}
+
+@media (max-width: 991px) {
+    .refund-schedule-table {
+        width: 100%;
+    }
+}

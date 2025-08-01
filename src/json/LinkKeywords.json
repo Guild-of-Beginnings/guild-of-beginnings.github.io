@@ -1,0 +1,34 @@
+{
+    "keywords": [
+        {
+            "keyword": "booking",
+            "link": "/book",
+            "enabled": true
+        },
+        {
+            "keyword": "services",
+            "link": "/services",
+            "enabled": true
+        },
+        {
+            "keyword": "Discord",
+            "link": "/book",
+            "enabled": true
+        },
+        {
+            "keyword": "phone",
+            "link": "/book",
+            "enabled": true
+        },
+        {
+            "keyword": "email",
+            "link": "/book",
+            "enabled": true
+        },
+        {
+            "keyword": "consultation",
+            "link": "/book",
+            "enabled": true
+        }
+    ]
+}

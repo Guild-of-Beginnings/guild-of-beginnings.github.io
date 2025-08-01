@@ -1,0 +1,16 @@
+.discount {
+    color: var(--primary-color);
+}
+
+.service-header {
+    /* color: var(--primary-color); */
+    font-weight: bold;
+}
+
+.service-cost {
+    font-weight: bold;
+}
+
+.explanation-group {
+    margin: 2rem 0;
+}

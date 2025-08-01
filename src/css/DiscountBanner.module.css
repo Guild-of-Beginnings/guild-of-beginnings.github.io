@@ -1,0 +1,42 @@
+.discount-banner {
+    width: 100%;
+    margin: 2rem auto;
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+.discount-banner h1 {
+    color: white;
+    font-size: 1rem;
+}
+.discount-banner h5 {
+    color: white;
+    font-size: 1rem;
+}
+.discount-banner-link {
+    display: inline-block;
+    width: 100%;
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    transition: background 0.2s;
+}
+.discount-banner-link:hover {
+    background-color: var(--secondary-color);
+}
+.discount-banner-link h1 {
+    margin: 0;
+}
+
+.highlight {
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+.discount-banner-link:hover h1 span.highlight {
+    color: var(--primary-color);
+}
