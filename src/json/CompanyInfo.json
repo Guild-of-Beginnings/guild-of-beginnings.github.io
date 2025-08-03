@@ -6,7 +6,7 @@
     "phone": "424-231-3756",
     "book": {
         "email": "schedule@guildofbeginnings.com",
-        "waitlist": true
+        "waitlist": false
     },
     "refunds": {
         "email": "refund@guildofbeginnings.com",
