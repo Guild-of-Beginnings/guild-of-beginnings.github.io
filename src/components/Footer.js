@@ -55,7 +55,7 @@ export default function Footer() {
                         </ul>
                     </div>
                     <div className={`${styles['group']}`}>
-                        <h1><Link to={'/book'} className='header-link'>Contact</Link></h1>
+                        <h1><Link to={'/book'} className='header-link' onClick={scrollToTop}>Contact</Link></h1>
                         <ul>
                             <li key={"Phone"}><i className="fas fa-phone" style={{ fontSize: 16, color: "white" }}></i>{" "}<Link to={`tel:${CompanyJSON.phone}`} className='default-font'>{formatPhoneNumber(CompanyJSON.phone)}</Link></li>
                             <li key={"Email"}><i className="fas fa-envelope" style={{ fontSize: 16, color: "white" }}></i>{" "}<Link to={`mailto:${CompanyJSON.email}`}>{CompanyJSON.email}</Link></li>
