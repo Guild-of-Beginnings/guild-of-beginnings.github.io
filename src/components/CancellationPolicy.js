@@ -1,6 +1,6 @@
 import CompanyJSON from '../json/CompanyInfo.json'
 
-export default function CancelationPolicy() {
+export default function CancellationPolicy() {
     
     const subject = encodeURIComponent(`${CompanyJSON.refunds.subject} for [name here]`);
     const body = encodeURIComponent(
@@ -18,7 +18,7 @@ export default function CancelationPolicy() {
 
     return (
         <>
-            <h1>Cancelation + Refund Policy</h1>
+            <h1>Cancellation + Refund Policy</h1>
             <p>We understand that life can be unpredictable. If you need to cancel or reschedule a session, please do so at least 24 hours in advance to avoid being charged for the session. If you cancel with less than 24 hours notice, you will be charged for the session.</p>
 
             <h2>Lesson Planning Fee</h2>
@@ -36,7 +36,7 @@ export default function CancelationPolicy() {
             
             <p>Refunds are processed within 10 business days. If you have not received your refund after 10 business days, please contact us.</p>
 
-            <p>We want to ensure that you have a positive experience with us, and we are committed to providing you with the best possible service. If you have any questions or concerns about our cancelation or refund policy, please feel free to contact us.</p>
+            <p>We want to ensure that you have a positive experience with us, and we are committed to providing you with the best possible service. If you have any questions or concerns about our cancellation or refund policy, please feel free to contact us.</p>
         </>
     );
 }

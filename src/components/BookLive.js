@@ -1,7 +1,7 @@
 
 import BookLink from "./BookLink";
 import BookGoogle from "./BookGoogle";
-import CancelationPolicy from "./CancelationPolicy";
+import CancellationPolicy from "./CancellationPolicy";
 
 import { formatPhoneNumber } from "../helpers/formatPhoneNumber";
 
@@ -80,7 +80,7 @@ export default function BookLive() {
                 {/* <BookCalendly /> */}
                 <BookGoogle />
 
-                <CancelationPolicy />
+                <CancellationPolicy />
 
             </div>
         </>
