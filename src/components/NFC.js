@@ -42,12 +42,12 @@ export default function NFC() {
                         <h3><strong>Robert Lafferty</strong></h3>
                         <p>Owner, {CompanyJSON.name}</p>
                     </div>
+                    <button onClick={saveContact} className="secondary"><i className="fas fa-download" aria-hidden="true" />{" "}Save Contact</button>
                     <h4>Contact Info</h4>
                     <p><i className="fas fa-phone" style={{ fontSize: 16 }} /><a href={`tel:${CompanyJSON.phone}`}>{formatPhoneNumber(CompanyJSON.phone)}</a></p>
                     <p><i className="fas fa-envelope" style={{ fontSize: 16 }} /><a href={`mailto:${CompanyJSON.email}`}>{CompanyJSON.email}</a></p>
                     <p><i className="fas fa-globe" aria-hidden="true" /><a href={CompanyJSON.website}>{CompanyJSON.website}</a></p>
                     <p><i className="fab fa-linkedin" aria-hidden="true" /><a href="https://www.linkedin.com/in/rclafferty">Connect on LinkedIn</a></p>
-                    <button onClick={saveContact}><i className="fas fa-download" aria-hidden="true" />{" "}Save Contact</button>
                 </div>
             </div>
         </>

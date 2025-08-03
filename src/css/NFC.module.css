@@ -19,7 +19,8 @@
     text-decoration: underline;
 }
 .nfc-container button {
-    margin-top: 2rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
     width: 50%;
 }
 .nfc-container p i {

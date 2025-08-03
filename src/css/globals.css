@@ -199,8 +199,6 @@ button.secondary:hover {
 }
 button.accent-border {
     border: 1px solid var(--secondary-color) !important;
-    /* background-color: transparent; */
-    /* color: var(--primary-color); */
 }
 
 .button-row {
