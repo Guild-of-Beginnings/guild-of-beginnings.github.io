@@ -1,11 +1,10 @@
-.calendly-inline-widget-custom {
+iframe.google-inline-widget {
     min-width: 20rem;
     min-height: 50rem;
-}
 
-.calendly-inline-widget-custom iframe {
-    min-width: 20rem;
-    min-height: 50rem;
+    border: 0;
+    height: 57rem;
+    width: 100%;
 }
 
 .refund-schedule-table {

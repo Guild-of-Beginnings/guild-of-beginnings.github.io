@@ -4,6 +4,8 @@ import ImageMarquee from './ImageMarquee';
 import FeaturedServices from './FeaturedServices';
 import AboutPreview from './AboutPreview';
 
+import scrollToTop from '../helpers/scrollToTop';
+
 import images from '../json/MarqueeImages.json';
 
 export default function Home() {
@@ -49,7 +51,10 @@ export default function Home() {
                 <FeaturedServices />
                 <button
                     className="wide center"
-                    onClick={() => navigate('/services')}
+                    onClick={() => {
+                        navigate('/services');
+                        scrollToTop();
+                    }}
                     title="View all services"
                     style={{ marginTop: '2rem' }}
                 >

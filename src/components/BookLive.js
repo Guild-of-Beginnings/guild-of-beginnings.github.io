@@ -76,8 +76,6 @@ export default function BookLive() {
                     />
                 </div>
 
-                {/* TODO: Add Calendly back after scheduling chat with Dustin. */}
-                {/* <BookCalendly /> */}
                 <BookGoogle />
 
                 <CancellationPolicy />

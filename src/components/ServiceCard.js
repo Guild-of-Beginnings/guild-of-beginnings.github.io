@@ -2,6 +2,8 @@ import { useNavigate } from 'react-router';
 
 import ServiceCardStyles from '../css/ServiceCard.module.css';
 
+import scrollToTop from '../helpers/scrollToTop';
+
 export default function ServiceCard({ service, clickable = true }) {
     const navigate = useNavigate();
 
@@ -16,7 +18,7 @@ export default function ServiceCard({ service, clickable = true }) {
         >
             <h3>{service.name}</h3>
             <p>{service["short-description"]}</p>
-            <button style={{cursor: (clickable? 'pointer': 'default')}}>{clickable ? "Learn More" : "Coming Soon"}</button>
+            <button style={{cursor: (clickable? 'pointer': 'default')}} onClick={scrollToTop}>{clickable ? "Learn More" : "Coming Soon"}</button>
         </div>
     );
 }

@@ -3,6 +3,8 @@ import { Link, useNavigate } from 'react-router';
 
 import ServiceCardStyles from '../css/ServiceCard.module.css';
 
+import scrollToTop from '../helpers/scrollToTop';
+
 import ServicesJson from '../json/Services.json';
 
 export default function FeaturedServices() {
@@ -41,7 +43,10 @@ export default function FeaturedServices() {
                                 </div>
                             </div>
                             <button
-                                onClick={() => navigate(`/services/${service.id}`)}
+                                onClick={() => {
+                                    navigate(`/services/${service.id}`);
+                                    scrollToTop();
+                                }}
                                 title={`Learn more about ${service.name}`}
                             >
                                 Learn More
