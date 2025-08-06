@@ -218,6 +218,41 @@ a:hover {
     text-decoration-color: var(--light-primary-color);
 }
 
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+}
+table tbody {
+    border: 1px solid var(--secondary-color);
+    border-radius: 1rem;
+}
+table thead tr th {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.5rem;
+}
+table thead tr th:first-child {
+    padding-left: 2rem;
+}
+table tbody tr td {
+    padding: 0.5rem;
+}
+table tbody tr td:first-child {
+    text-align: left;
+    padding-left: 2rem;
+}
+table tbody tr:nth-child(2n) {
+    background-color: var(--lightest-secondary-color);
+}
+table tbody tr.alt-row:nth-child(2n) {
+    /* background-color: var(--lightest-primary-color); */
+}
+table tbody a {
+    color: var(--primary-color);
+}
+
+
 .hover-lift:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
@@ -231,7 +266,6 @@ footer p {
 
 .content-container {
     width: 60%;
-    /* padding: 1rem 3rem; */
     margin: 0 auto;
 }
 
@@ -242,6 +276,14 @@ footer p {
 
 .no-underline {
     text-decoration: none !important;
+}
+
+code {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    background-color: rgb(228, 226, 226);
+    border: 1px solid var(--primary-color);
 }
 
 ::selection {
@@ -258,4 +300,11 @@ footer p {
   .button-row button {
       width: 100%;
   }
+}
+
+@media (max-width: 563px) {
+    table {
+        min-width: 500px;
+        width: 100%;
+    }
 }

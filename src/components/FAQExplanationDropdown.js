@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import styles from '../css/ExplanationDropdown.module.css'
 
 import { parseBoldText } from '../helpers/parseBoldText';
-import useHyperlinkKeywords from '../helpers/hyperlinkKeywords';
+import UseHyperlinkKeywords from '../helpers/hyperlinkKeywords';
 
 export default function FAQExplanationDropdown({json, price, discount = 0}) {
     console.log(json);
@@ -33,7 +33,7 @@ export default function FAQExplanationDropdown({json, price, discount = 0}) {
             >
                 <>
                     <div className={`${styles["dropdown-text-no-margin"]}`}>
-                        <p>{useHyperlinkKeywords(parseBoldText(json.description))}</p>
+                        <p>{UseHyperlinkKeywords(parseBoldText(json.description))}</p>
                     </div>
                 </>
             </div>

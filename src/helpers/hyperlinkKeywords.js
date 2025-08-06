@@ -6,29 +6,44 @@ import scrollToTop from '../helpers/scrollToTop';
 
 import keywordJSON from '../json/LinkKeywords.json';
 
-export default function useHyperlinkKeywords(nodes) {
+export default function UseHyperlinkKeywords(nodes) {
     const [keywords] = useState(keywordJSON.keywords);
-    // nodes can be string or array of React elements/strings
+
     if (typeof nodes === 'string') {
         nodes = [nodes];
     }
+
     return nodes.flatMap((node, idx) => {
-        if (typeof node === 'string') {
-            // Split string into words, whitespace, and punctuation, preserving all parts
-            const parts = node.match(/(\w+|\s+|[^\w\s]+)/gu) || [];
-            return parts.map((part, index) => {
-                const keywordObj = keywords.find(({ keyword }) => part.trim() === keyword);
-                if (keywordObj && keywordObj.enabled && part.trim()) {
-                    return (
-                        <Link key={`${idx}-${index}`} to={keywordObj.link} onClick={scrollToTop}>
-                            {part}
+        if (typeof node !== 'string') return node;
+
+        let result = [];
+        let remaining = node;
+
+        while (remaining.length > 0) {
+            let found = false;
+
+            for (const { keyword, link, enabled } of keywords) {
+                if (!enabled) continue;
+
+                if (remaining.startsWith(keyword)) {
+                    result.push(
+                        <Link key={`${idx}-${result.length}`} to={link} onClick={scrollToTop}>
+                            {keyword}
                         </Link>
                     );
+                    remaining = remaining.slice(keyword.length);
+                    found = true;
+                    break;
                 }
-                return part;
-            });
+            }
+
+            if (!found) {
+                // Add one character and continue
+                result.push(remaining[0]);
+                remaining = remaining.slice(1);
+            }
         }
-        // If already a React element, return as is
-        return node;
+
+        return result;
     });
-};
+}
