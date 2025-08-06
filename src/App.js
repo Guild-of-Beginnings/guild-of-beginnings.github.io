@@ -21,7 +21,7 @@ import CompanyJSON from './json/CompanyInfo.json'
 function App() {
     return(
         <>
-            <ErrorBoundary fallback="An error has occurred. For the static site, please visit this page: ">
+            <ErrorBoundary fallback="An error has occurred. Please ensure JavaScript is enabled in your browser and either refresh the page or try again later.">
                 <NavBar />
                     <Routes>
                         <Route index element={<Home />} />

@@ -23,11 +23,15 @@
         "termsUrl": "/terms-of-service"
     },
     "socialMediaLinks": {
-        "facebook": "FB-TBD",
-        "twitter": "X-TBD",
-        "instagram": "I-TBD",
-        "linkedin": "LI-TBD",
-        "discord": "https://discord.gg/UKjBpKSPWB"
+        "facebook": "https://www.facebook.com/guildofbeginnings",
+        "twitter": "https://x.com/guildbeginnings",
+        "instagram": "https://www.instagram.com/guildofbeginnings",
+        "linkedin": "https://www.linkedin.com/company/guildofbeginnings",
+        "discord": "https://discord.gg/UKjBpKSPWB",
+        "twitch": "https://www.twitch.tv/guildofbeginnings",
+        "tiktok": "https://www.tiktok.com/@guildofbeginnings",
+        "youtube": "https://www.youtube.com/@guildbeginnings",
+        "reddit": "https://www.reddit.com/user/guildofbeginnings"
     },
     "logoUrl": "/images/logo.png",
     "logoWhiteUrl": "/GameTutorLogo2.png",

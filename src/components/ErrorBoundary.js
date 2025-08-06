@@ -19,10 +19,10 @@ class ErrorBoundary extends React.Component {
                 <>
                     <div className="alert alert-danger">
                         <h2>Something went wrong.</h2>
-                        <p>Please try again later.</p>
                     </div>
                     
-                    <h4>{this.props.fallback}</h4>
+                    <p>{this.props.fallback}</p>
+                    <p>If the problem persists, feel free to contact us at <a href="mailto:support@guildofbeginnings.com">support@guildofbeginnings.com</a></p>
                 </>
             );
         }

@@ -19,7 +19,6 @@ export default function PriceChart({allOffers, caveats}) {
                 </tr>
             </thead>
             <tbody>
-                {/* Example data, replace with actual data */}
                 { isIntroOfferAvailable &&
                     <tr>
                         <td><strong>Two Intro Sessions</strong></td>

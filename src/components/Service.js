@@ -52,7 +52,6 @@ export default function Service() {
                         ) : (
                             <p className="col-12">{details.description}</p>
                         )}
-                        {/* <p className="col-12 mt-3">{details.description}</p> */}
                         
                         <h5 style={{fontWeight: "bold"}}>{`Cost: ${currencyFormat.format(details.price)} ${details.priceType}`}<span className="default-font">*</span>{lessonPlanningFee && ` + ${currencyFormat.format(lessonPlanningFee.price)} ${lessonPlanningFee.title}`}{lessonPlanningFee && <span className="default-font">**</span>}</h5>
                         <PriceChart allOffers={offers} caveats={[

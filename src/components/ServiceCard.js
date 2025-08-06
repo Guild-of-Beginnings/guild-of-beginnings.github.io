@@ -7,8 +7,6 @@ import scrollToTop from '../helpers/scrollToTop';
 export default function ServiceCard({ service, clickable = true }) {
     const navigate = useNavigate();
 
-    // console.log(`ServiceCard: service.id = ${service.id}, clickable = ${clickable}`);
-
     return (
         <div key={service.id}
             className={`hover-lift ${ServiceCardStyles["service-card"]}`}

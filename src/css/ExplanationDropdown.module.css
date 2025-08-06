@@ -47,9 +47,7 @@
 }
 
 .dropdown-text {
-    margin-top: 3rem;
-    /* flex: 0 0 auto; */
-    /* width: 60%; */
+    /* margin-top: 0; */
 }
 .dropdown-text-no-margin {
     margin-top: 0;
