@@ -48,6 +48,8 @@ export default function Home() {
         <>
             <ImageMarquee images={combinedImages} cycleTime={5} />
             <div className='container'>
+                <h1 className="col-12 header">The Guild's Purpose</h1>
+                <p style={{fontSize: "1.8rem", textAlign: "center"}}>We help learners level up beyond generic tutorials through personalized guidance crafted for each unique development journey.</p>
                 <FeaturedServices />
                 <button
                     className="wide center"

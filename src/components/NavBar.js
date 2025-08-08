@@ -56,6 +56,14 @@ export default function NavBar() {
                 >
                     Services
                 </button>
+                { CompanyJSON.bonusContent &&
+                    <button
+                        className={`${getActiveClass(`/bonus`)} ${isOpen ? "" : "hidden"}`}
+                        onClick={() => navigate(`/bonus`)}
+                    >
+                        Bonus Content
+                    </button>
+                }
                 <button
                     className={`${getActiveClass(`/book`)} ${isOpen ? "" : "hidden"}`}
                     onClick={() => navigate(`/book`)}

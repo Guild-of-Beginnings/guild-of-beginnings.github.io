@@ -50,6 +50,7 @@ export default function Footer() {
                         <ul>
                             <li key={"Home"}><Link to={"/"} onClick={scrollToTop}>Home</Link></li>
                             <li key={"Book"}><Link to={"/book"} onClick={scrollToTop}>{CompanyJSON.book.waitlist ? "Join Waitlist" : "Book a Session"}</Link></li>
+                            { CompanyJSON.bonusContent && <li key={"Bonus"}><Link to={"/bonus"} onClick={scrollToTop}>Bonus Content</Link></li> }
                             <li key={"About"}><Link to={"/about"} onClick={scrollToTop}>About</Link></li>
                             <li key={"Privacy"}><Link to={CompanyJSON.privacyPolicy.policyUrl} onClick={scrollToTop}>Privacy Policy</Link></li>
                         </ul>

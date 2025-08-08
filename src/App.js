@@ -15,6 +15,8 @@ import FAQ from './components/FAQ';
 import PrivacyPolicy from './components/PrivacyPolicy';
 import Error404 from './components/Error404';
 import NFC from './components/NFC';
+import BonusContentList from './components/BonusContentList';
+import BonusContent from './components/BonusContent';
 
 import CompanyJSON from './json/CompanyInfo.json'
 
@@ -32,7 +34,8 @@ function App() {
                         <Route path="book" element={<Book />} />
                         <Route path="about" element={<About />} />
                         <Route path="nfc" element={<NFC />} />
-
+                        <Route path="bonus" element={<BonusContentList />} />
+                        <Route path="bonus/:id" element={<BonusContent />} />
                         {/* Add more routes as needed */}
                         <Route path="*" element={<Error404 />} />
                     </Routes>
