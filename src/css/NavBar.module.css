@@ -11,48 +11,61 @@
     
 }
 .navbar img {
-  margin-right: 1rem;
+    margin-right: 1rem;
 }
 .navbar button {
-  margin: 0;
+    margin: 0;
     font-size: 1.3rem;
     line-height: 1.6;
     letter-spacing: 0.05rem;
     font-weight: 700 !important;
 }
 .navbar h1 {
-  color: white;
-  font-size: 1rem;
-  display: inline-block;
-  margin: 0;
-  vertical-align: middle;
+    color: white;
+    font-size: 1rem;
+    display: inline-block;
+    margin: 0;
+    vertical-align: middle;
     font-size: 1.3rem;
     line-height: 1.6;
     letter-spacing: 0.05rem;
 }
 .navbar-toggle {
-  position: absolute;
-  right: 2rem;
-  top: 2rem;
-  transform: translateY(-50%);
-  width: 4rem;
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+    transform: translateY(-50%);
+    width: 2rem;
     visibility: hidden;
+    background: none;
 }
 @media(max-width: 1024px) {
-  .navbar {
-    flex-direction: column;
-    width: 100%;
-    gap: 1rem;
-  }
-  .navbar button {
-    width: 50%;
-  }
-  .navbar-toggle {
-    visibility: visible;
-  }
+    .navbar {
+        flex-direction: column;
+        width: 100%;
+        gap: 1rem;
+    }
+    .navbar button {
+        width: 50%;
+    }
+    .navbar-toggle {
+        visibility: visible;
+    }
 }
 @media(max-width: 767px) {
-  .navbar button {
-    width: 90%;
-  }
+    .navbar button {
+        width: 100%;
+    }
+}
+@media (max-width: 500px) {
+    .navbar a {
+        width: 90%;
+    }
+    .navbar h1 {
+        text-align: center;
+        width: 70%;
+    }
+    .navbar button {
+        width: 50%;
+    }
 }
