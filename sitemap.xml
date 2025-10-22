@@ -5,8 +5,6 @@
 <url> <loc>https://www.guildofbeginnings.com/services/unity</loc> <changefreq>weekly</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.guildofbeginnings.com/services/unreal</loc> <changefreq>weekly</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.guildofbeginnings.com/bonus</loc> <changefreq>weekly</changefreq> <priority>0.8</priority> </url>
-<url> <loc>https://www.guildofbeginnings.com/bonus/game-vs-game-engine</loc> <changefreq>weekly</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://www.guildofbeginnings.com/bonus/unity-vs-unreal</loc> <changefreq>weekly</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.guildofbeginnings.com/faq</loc> <changefreq>monthly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://www.guildofbeginnings.com/book</loc> <changefreq>monthly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://www.guildofbeginnings.com/about</loc> <changefreq>monthly</changefreq> <priority>0.5</priority> </url>
