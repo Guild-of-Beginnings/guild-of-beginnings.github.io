@@ -19,7 +19,7 @@
             ],
             "image": "UnityFundamentals4.png",
             "featured-alt-text": "A screenshot of the Unity Editor showing a dimly lit scene with a character in black clothing hunched outside of a doorway with a light above them and a ladder and barrel nearby.",
-            "price": 100,
+            "price": 49,
             "priceType": "per session",
             "session-length": "1 hour",
             "topics": [
@@ -91,7 +91,7 @@
                 "Scheduling is fully flexible, so you can learn on your time without the stress. And with built-in guidance on version control, you'll be equipped with professional workflows from day one. If you're serious about turning your game ideas into playable, polished experiences, this is your next step."
             ],
             "image": "",
-            "price": 100,
+            "price": 49,
             "priceType": "per session",
             "session-length": "1 hour",
             "topics": [
@@ -223,8 +223,8 @@
         {
             "currently-offered": true,
             "title": "Sandbox Project",
-            "description": "Unlock your full learning potential with an exclusive Sandbox Project! This hands-on, fully customized project is designed to reinforce and expand on the concepts covered in your sessions directly inside the engine. Dive in, experiment, and master new skills faster with a practical, interactive environment built just for you. It's the ultimate way to turn knowledge into real-world results!",
-            "price": 1000,
+            "description": "Unlock your full learning potential with a Sandbox Project! This hands-on, open-ended project is designed to reinforce and expand on the concepts covered in your sessions directly inside the engine. Dive in, experiment, and master new skills faster with a practical, interactive environment built just for you. It's the ultimate way to turn knowledge into real-world results!",
+            "price": 299,
             "priceType": "",
             "show-total": true
         },
@@ -232,7 +232,7 @@
             "currently-offered": true,
             "title": "Practice Sessions (1 session)",
             "description": "Supercharge your progress with an exclusive practice session! After completing your learning plan, book an extra session within 1 month to reinforce key concepts, tackle lingering questions, or polish your skills with expert guidance. It's the perfect way to lock in your knowledge and keep your momentum going strong!",
-            "price": 90,
+            "price": 39,
             "priceType": "per session",
             "show-total": true
         },
@@ -240,7 +240,7 @@
             "currently-offered": true,
             "title": "Practice Sessions (3 sessions)",
             "description": "Strengthen your understanding of the topics covered in your learning plan with a bundle of three focused practice sessions. After completing your plan, schedule these sessions within 1 month to review and reinforce key concepts, clarify any lingering questions, and ensure you have a solid grasp of the material. It's an effective way to build confidence and retain what you've learned.",
-            "price": 250,
+            "price": 99,
             "priceType": "",
             "show-total": true
         }
@@ -269,7 +269,7 @@
         {
             "title": "Lesson Planning Fee",
             "description": "Lesson Planning Fee is a one-time fee to cover the time spent creating your personalized learning plan.",
-            "price": 200,
+            "price": 99,
             "priceType": ""
         }
     ]
