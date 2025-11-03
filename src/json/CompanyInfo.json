@@ -33,7 +33,7 @@
         "youtube": "https://www.youtube.com/@guildbeginnings",
         "reddit": "https://www.reddit.com/user/guildofbeginnings"
     },
-    "bonusContent": false,
+    "bonusContent": true,
     "logoUrl": "/images/logo.png",
     "logoWhiteUrl": "/GameTutorLogo2.png",
     "faviconUrl": "/images/favicon.ico"

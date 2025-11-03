@@ -13,9 +13,16 @@
                 "You choose when to travel. With fully flexible scheduling and expert guidance on version control, you'll not only build games, you'll gain the confidence and skills to carry them across the finish line. The Scrolls await! Are you ready to turn your ideas into living, playable worlds?"
             ],
             "featured-description": [
-                "Unlock your potential with a personalized tutoring plan built just for you. Through one-on-one sessions, you'll master the Unity Engine fundamentals, C# scripting, and core game design principles. Whether you're just starting out or looking to sharpen your skills, each lesson is tailored to your pace and goals, ensuring steady progress and real-world understanding.",
-                "From building interactive gameplay systems to implementing smart game AI, this plan dives deep into the practical side of development. You'll learn how to structure efficient code, work with physics systems, and bring your game to life with responsive animation integration, all while following clean development practices. Hands-on testing techniques are built in every step of the way, helping you catch bugs early and improve player experience.",
-                "Scheduling is fully flexible, so you can learn on your time without the stress. And with built-in guidance on version control, you'll be equipped with professional workflows from day one. If you're looking to turn your game ideas into playable, polished experiences, this is your next step."
+                "Unlock your potential with a personalized tutoring plan built just for you. Through one-on-one sessions, you'll master the Unity Engine fundamentals, C# scripting, and core game design principles."
+            ],
+            "featured-topics-list": [
+                "Unity Fundamentals",
+                "Game Design Fundamentals",
+                "Programming",
+                "Game AI",
+                "Physics",
+                "Animation",
+                "Version Control"
             ],
             "image": "UnityFundamentals4.png",
             "featured-alt-text": "A screenshot of the Unity Editor showing a dimly lit scene with a character in black clothing hunched outside of a doorway with a light above them and a ladder and barrel nearby.",
@@ -76,7 +83,7 @@
         {
             "id": "unreal",
             "currently-offered": true,
-            "featured": false,
+            "featured": true,
             "name": "Scrolls of Unreal",
             "subtitle": "Every journey starts with a scroll. Let's chart your Unreal path together!",
             "short-description": "Discover the Scrolls of Unreal and learn the foundations of Unreal Engine through personalized, one-on-one support. Whether you're exploring Blueprints or just starting with C++, this path helps you get familiar with the tools and build confidence as you begin your development adventure.",
@@ -86,11 +93,18 @@
                 "Your journey, your rhythm. With a flexible path and practical challenges drawn from real development, you'll gain more than knowledge. You'll gain mastery, momentum, and the power to bring your ideas to life."
             ],
             "featured-description": [
-                "Unlock your potential with a personalized tutoring plan built just for you. Through one-on-one sessions, you'll master the Unity Engine fundamentals, C# scripting, and core game design principles. Whether you're just starting out or looking to sharpen your skills, each lesson is tailored to your pace and goals, ensuring steady progress and real-world understanding.",
-                "From building interactive gameplay systems to implementing smart game AI, this plan dives deep into the practical side of development. You'll learn how to structure efficient code, work with physics systems, and bring your game to life with responsive animation integration, all while following clean development practices. Hands-on testing techniques are built in every step of the way, helping you catch bugs early and improve player experience.",
-                "Scheduling is fully flexible, so you can learn on your time without the stress. And with built-in guidance on version control, you'll be equipped with professional workflows from day one. If you're serious about turning your game ideas into playable, polished experiences, this is your next step."
+                "Unlock your potential with a personalized tutoring plan built just for you. Through one-on-one sessions, you'll master the Unreal Engine fundamentals, C++ scripting, and core game design principles."
             ],
-            "image": "",
+            "featured-topics-list": [
+                "Unreal Fundamentals",
+                "Game Design Fundamentals",
+                "C++ and Blueprints",
+                "Game AI",
+                "Physics",
+                "Animation",
+                "Version Control"
+            ],
+            "image": "UEGameAI.png",
             "price": 49,
             "priceType": "per session",
             "session-length": "1 hour",

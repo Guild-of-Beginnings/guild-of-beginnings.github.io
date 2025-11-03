@@ -21,7 +21,6 @@ export default function FeaturedServices() {
     return (
         <>
             <h1 className="col-12 header">Featured Services</h1>
-            <div className={`${ServiceCardStyles["featured-services"]}`}>
                 {services.map(({id}, i) => {
                     const service = getFeaturedServiceById(id);
                     if (!service) {
@@ -29,32 +28,43 @@ export default function FeaturedServices() {
                         return null;
                     }
                     return (
-                        <div key={i} className={`${ServiceCardStyles["featured-service"]}`}>
-                            <Link to={`/services/${service.id}`} title={`Learn more about ${service.name}`}>
-                                <h2>{service.name}</h2>
-                            </Link>
+                        <div className={`${ServiceCardStyles["featured-services"]}`}>
+                            <div key={i} className={`${ServiceCardStyles["featured-service"]}`}>
+                                <Link to={`/services/${service.id}`} title={`Learn more about ${service.name}`}>
+                                    <h2>{service.name}</h2>
+                                </Link>
 
-                            <div>
-                                <img className={`${ServiceCardStyles["featured-image"]}`} src={`${service.image ? `/images/${service.image}` : '/GameTutorLogo2.png'}`} alt={service['featured-alt-text'] ? service['featured-alt-text'] : `No alt text available for ${service.name}`}/>
-                                <div className={`${ServiceCardStyles["content"]}`}>
-                                    {service['featured-description'].map((text, i) => {
-                                        return (<p key={i}>{text}</p>);
-                                    })}
+                                <div>
+                                    <img className={`${ServiceCardStyles["featured-image"]}`} src={`${service.image ? `/images/${service.image}` : '/GameTutorLogo2.png'}`} alt={service['featured-alt-text'] ? service['featured-alt-text'] : `No alt text available for ${service.name}`}/>
+                                    <div className={`${ServiceCardStyles["content"]}`}>
+                                        {service['featured-description'].map((text, i) => {
+                                            return (<p key={i}>{text}</p>);
+                                        })}
+                                    </div>
+                                    
+                                    <div className={`${ServiceCardStyles["content"]}`}>
+                                        <h3>Embark on this journey to explore:</h3>
+                                        {service['featured-topics-list'].map((topic, i) => {
+                                            return (<ul key={i} className={`${ServiceCardStyles["featured-topics-list"]}`}>
+                                                <li>{topic}</li>
+                                            </ul>);
+                                        })}
+                                    </div>
                                 </div>
+                                
+                                <button
+                                    onClick={() => {
+                                        navigate(`/services/${service.id}`);
+                                        scrollToTop();
+                                    }}
+                                    title={`Learn more about ${service.name}`}
+                                >
+                                    Learn More
+                                </button>
                             </div>
-                            <button
-                                onClick={() => {
-                                    navigate(`/services/${service.id}`);
-                                    scrollToTop();
-                                }}
-                                title={`Learn more about ${service.name}`}
-                            >
-                                Learn More
-                            </button>
                         </div>
                     );
                 })}
-            </div>
         </>
     );
 }

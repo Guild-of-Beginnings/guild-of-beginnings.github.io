@@ -15,16 +15,16 @@ At a fundamental level, game engines are a collection of code, default assets, a
 - User Input
 - User Interface
 
-[Insert a graphic here]
+[comment]: <> (Insert a graphic here)
 
 # Games
 
-A game is the unique experience for the player built on top of the game engine. As an example, games like *Among Us* and *Overcooked!* are both made with the Unity game engine but present two distinct experiences for the player. The game can include custom code, custom models and animations, custom audio, and more. However, it can still rely on fundamental code provided by the engine to expedite the development process.
+A game is the unique playable experience for the player built on top of the game engine. As an example, games like *Among Us* and *Pokemon Go* are both made with the Unity game engine but present two distinct experiences for the player. The game can include custom code, custom models and animations, custom audio, and more. However, it can still rely on fundamental code provided by the engine to expedite the development process.
 
-[Insert a graphic here]
+[comment]: <> (Insert a graphic here)
 
 # Summary
 
-[Insert a graphic here]
+[comment]: <> (Insert a graphic here)
 
 Games and game engines are very closely tied together. However, understanding the difference between the two will be crucial for organizing a game development project and building the best possible game.

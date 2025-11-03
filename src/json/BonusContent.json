@@ -1,12 +1,18 @@
 {
     "content": [
         {
-            "id": "unity-vs-unreal",
-            "visible": true
-        }
-        ,{
-            "id": "game-vs-game-engine",
-            "visible": true
+            "category": "Starting Out",
+            "visible": true,
+            "pages": [
+                {
+                    "id": "starting-unity-vs-unreal",
+                    "visible": true
+                }
+                , {
+                    "id": "starting-game-vs-game-engine",
+                    "visible": true
+                }
+            ]
         }
     ]
 }

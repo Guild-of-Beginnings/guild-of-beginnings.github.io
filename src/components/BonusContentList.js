@@ -13,33 +13,48 @@ export default function BonusContentList() {
     // Fetch markdown metadata for each entry
     useEffect(() => {
         async function loadMarkdown() {
-            const results = await Promise.allSettled(
-                BonusJSON.content.map(async (entry) => {
-                    if (!entry.visible) return null;
+            const categories = [];
 
-                    try {
-                        const path = `/bonus/${entry.id}.md`;
-                        const res = await fetch(path);
-                        if (!res.ok) throw new Error('Markdown not found');
-                        const text = (await res.text()).replace(/^\uFEFF/, '').trimStart();
-                        const { attributes } = matter(text);
-                        return {
-                            id: entry.id,
-                            title: attributes.title || 'Untitled',
-                            category: attributes.category || 'Uncategorized',
-                        };
-                    } catch (err) {
-                        console.error(`Error loading ${entry.id}:`, err);
-                        return null;
-                    }
-                })
-            );
+            // Process each category
+            for (const categoryObj of BonusJSON.content) {
+                if (!categoryObj.visible) continue;
 
-            const loaded = results
-                .filter(r => r.status === 'fulfilled' && r.value)
-                .map(r => r.value);
+                // Process each page in the category
+                const categoryEntries = await Promise.allSettled(
+                    categoryObj.pages.map(async (page) => {
+                        if (!page.visible) return null;
+                        
+                        try {
+                            const path = `/bonus/${page.id}.md`;
+                            const res = await fetch(path);
+                            if (!res.ok) throw new Error('Markdown not found');
+                            
+                            const text = (await res.text()).replace(/^\uFEFF/, '').trimStart();
+                            const { attributes } = matter(text);
+                            
+                            return {
+                                id: page.id,
+                                title: attributes.title || 'Untitled',
+                            };
+                        } catch (err) {
+                            console.error(`Error loading ${page.id}:`, err);
+                            return null;
+                        }
+                    })
+                );
 
-            setBonusEntries(loaded);
+                // Collect successful entries
+                const pages = categoryEntries
+                    .filter(r => r.status === 'fulfilled' && r.value)
+                    .map(r => r.value);
+
+                categories.push({
+                    category: categoryObj.category,
+                    pages: pages
+                });
+            }
+
+            setBonusEntries(categories);
         }
 
         loadMarkdown();
@@ -76,24 +91,27 @@ export default function BonusContentList() {
             <ImageMarquee images={combinedImages} cycleTime={5} />
             <div className="container">
                 <h1 className="col-12 header">Free Bonus Content</h1>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Category</th>
-                            <th>Topic</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {bonusEntries.map((entry, i) => (
-                            <tr key={i} className="alt-row">
-                                <td>{entry.category}</td>
-                                <td>
-                                    <Link to={`/bonus/${entry.id}`}>{entry.title}</Link>
-                                </td>
-                            </tr>
-                        ))}
-                    </tbody>
-                </table>
+                
+                {bonusEntries.map((categoryObj) => (
+                    <div key={categoryObj.category}>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>{categoryObj.category} Topics</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {categoryObj.pages.map((page) => (
+                                    <tr key={page.id}>
+                                        <td>
+                                            <Link to={`/bonus/${page.id}`}>{page.title}</Link>
+                                        </td>
+                                    </tr>
+                                ))}
+                            </tbody>
+                        </table>
+                    </div>
+                ))}
             </div>
         </>
     );
