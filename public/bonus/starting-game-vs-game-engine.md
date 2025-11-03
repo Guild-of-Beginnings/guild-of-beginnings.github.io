@@ -1,7 +1,7 @@
 ---
 title: "Games vs Game Engines: What's the Difference?"
 category: Starting Out
-date: "2025-08-05"
+date: "2025-11-03"
 ---
 
 Is Unity a game? Is Fortnite a game engine? Many new game developers often get confused about the differences between games and game engines. To help build a clearer and stronger project, here's a summary of the differences:
