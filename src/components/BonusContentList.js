@@ -23,13 +23,16 @@ export default function BonusContentList() {
                 const categoryEntries = await Promise.allSettled(
                     categoryObj.pages.map(async (page) => {
                         if (!page.visible) return null;
-                        
                         try {
-                            const publicUrl = (process.env.PUBLIC_URL || '').replace(/\/$/, '');
-                            const path = `${window.location.origin}${publicUrl}/bonus/${page.id}.md`;
+                            // For custom domain, just use root-relative paths
+                            const path = `/bonus/${page.id}.md`;
                             console.log(`Fetching markdown for ${page.id} from ${path}`);
+                            
                             const res = await fetch(path);
-                            if (!res.ok) throw new Error('Markdown not found');
+                            if (!res.ok) {
+                                console.error(`Failed to fetch ${path}: ${res.status} ${res.statusText}`);
+                                throw new Error(`Markdown not found: ${res.status}`);
+                            }
                             
                             const text = (await res.text()).replace(/^\uFEFF/, '').trimStart();
                             const { attributes } = matter(text);
