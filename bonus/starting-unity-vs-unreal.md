@@ -1,17 +1,12 @@
 ---
 title: "Unity vs Unreal: Which is Better?"
 category: "Starting Out"
-date: "2025-08-05"
+date: "2025-11-03"
 ---
 
 # Unity Engine
 
-Unity is a beginner-friendly [game engine](game-vs-game-engine.md) that uses C# as its primary scripting language. Unity was the foundation for some great AAA games, including *Rust* and *Ori and the Will of the Wisps*. Likewise, Unity has lower technical specification requirements than Unreal Engine, allowing developers to use a wider ariety of development machines.
-
-[comment]: <> (Comparing it to Unreal Engine)
-
-[comment]: <> (Comparing it to Unreal Engine)
-
+Unity is a beginner-friendly [game engine](game-vs-game-engine.md) that uses C# as its primary scripting language. Unity was the foundation for some great AAA and indie games, including *Overcooked!* and *Ori and the Will of the Wisps*. Likewise, Unity has lower technical specification requirements than Unreal Engine, allowing developers to use a wider ariety of development machines.
 
 Unity is used primarily for the following types of projects:
 - 2D
@@ -22,7 +17,7 @@ Unity is used primarily for the following types of projects:
 - Virtual Reality (VR)
 - Mixed Reality (XR)
 
-[Insert screenshot of the Unity editor]
+[comment]: <> (Insert screenshot of the Unity editor)
 
 # Unreal Engine
 
@@ -35,7 +30,7 @@ Unreal Engine is used primarily for the following types of projects:
 - Virtual Reality (VR)
 - Mixed Reality (XR)
 
-[Insert screenshot of the Unreal Engine editor]
+[comment]: <> (Insert screenshot of the Unreal Engine editor)
 
 # Verdict
 
@@ -43,7 +38,8 @@ Either engine will work really well for general 3D game development. They each h
 
 |  | Unity | Unreal |
 |----------|----------|----------|
-| Beginner-Friendly | Yes! | Not really |
+| Beginner-Friendly | Yes! | Yes! |
+| Used in Professional Games | Yes! | Yes! |
 | Development Machine Requirements | Lower requirements | Higher requirements |
 | 2D Development | Yes! | Not recommended |
 | 3D Development | Yes! | Yes! |
@@ -56,8 +52,7 @@ Go with Unity Engine if:
 - Your development machine doesn't quite meet the Unreal Engine minimum specifications
 
 Go with Unreal Engine if:
-- You prefer visual scripting
+- You prefer visual scripting instead of writing code
 - You are more comfortable working with C++ than C#
-- Prefer visual scripting instead of writing code
 
-Regardless of which you choose, you can always learn the other later as well.
+Regardless of which you choose, you can always learn the other later.
