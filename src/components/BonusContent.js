@@ -35,7 +35,7 @@ export default function BonusContent() {
         if (!id) return <p>ID {id} not found.</p>;
 
         // Build path dynamically, e.g. /path/test.md
-        const mdPath = `/bonus/${id}.md`;
+        const mdPath = `${process.env.PUBLIC_URL}/bonus/${id}.md`;
 
         fetch(mdPath)
             .then(res => {
