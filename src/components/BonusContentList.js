@@ -25,7 +25,7 @@ export default function BonusContentList() {
                         if (!page.visible) return null;
                         
                         try {
-                            const path = `/bonus/${page.id}.md`;
+                            const path = `${process.env.PUBLIC_URL}/bonus/${page.id}.md`;
                             const res = await fetch(path);
                             if (!res.ok) throw new Error('Markdown not found');
                             
