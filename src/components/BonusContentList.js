@@ -24,8 +24,8 @@ export default function BonusContentList() {
                     categoryObj.pages.map(async (page) => {
                         if (!page.visible) return null;
                         try {
-                            // For custom domain, just use root-relative paths
-                            const path = `/bonus/${page.id}.md`;
+                            // Always fetch from absolute root, regardless of current route
+                            const path = `${window.location.origin}/bonus/${page.id}.md`;
                             console.log(`Fetching markdown for ${page.id} from ${path}`);
                             
                             const res = await fetch(path);
