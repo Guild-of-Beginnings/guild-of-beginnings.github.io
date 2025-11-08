@@ -1,7 +1,7 @@
 {
   "name": "guild-of-beginnings",
   "description": "Guild of Beginnings | Start Your Game Dev Journey Today!",
-  "homepage": "/",
+  "homepage": "https://www.guildofbeginnings.com",
   "version": "0.1.0",
   "private": false,
   "dependencies": {
