@@ -6,7 +6,7 @@ date: "2025-11-08"
 
 # Unity Engine
 
-Unity is a beginner-friendly [game engine](game-vs-game-engine.md) that uses C# as its primary scripting language. Unity was the foundation for some great AAA and indie games, including *Overcooked!* and *Ori and the Will of the Wisps*. Likewise, Unity has lower technical specification requirements than Unreal Engine, allowing developers to use a wider ariety of development machines.
+Unity is a beginner-friendly [game engine](starting-game-vs-game-engine.md) that uses C# as its primary scripting language. Unity was the foundation for some great AAA and indie games, including *Overcooked!* and *Ori and the Will of the Wisps*. Likewise, Unity has lower technical specification requirements than Unreal Engine, allowing developers to use a wider ariety of development machines.
 
 Unity is used primarily for the following types of projects:
 - 2D
@@ -21,7 +21,7 @@ Unity is used primarily for the following types of projects:
 
 # Unreal Engine
 
-Unreal Engine is a robust [game engine](game-vs-game-engine.md) that uses C++ as the primary scripting language as well as Blueprint support for visual scripting. Blueprints are well-supported as a visual scripting language, allowing non-programmers easier access to making games. Unreal Engine is a popular choice for both indie and AAA developers, including games like *Rocket League* and *Star Wars Jedi: Fallen Order*. Unreal Engine has a slightly more complex editor than Unity but provides great templates to make professional-looking projects from the start.
+Unreal Engine is a robust [game engine](starting-game-vs-game-engine.md) that uses C++ as the primary scripting language as well as Blueprint support for visual scripting. Blueprints are well-supported as a visual scripting language, allowing non-programmers easier access to making games. Unreal Engine is a popular choice for both indie and AAA developers, including games like *Rocket League* and *Star Wars Jedi: Fallen Order*. Unreal Engine has a slightly more complex editor than Unity but provides great templates to make professional-looking projects from the start.
 
 Unreal Engine is used primarily for the following types of projects:
 - 3D
