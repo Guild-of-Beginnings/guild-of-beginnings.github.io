@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router';
 
 import styles from '../css/Testimonial.module.css';
@@ -29,15 +29,6 @@ export default function Testimonials({ marginTop = true, cycleTime = 5 }) {
             setIndex(index - 1);
         }
     };
-
-    // Auto cycling
-    // useEffect(() => {
-    //     const interval = setInterval(() => {
-    //         nextSlide();
-    //     }, cycleTime * 1000);
-
-    //     return () => clearInterval(interval);
-    // }, [index, cycleTime]);
 
     return (
         <div

@@ -2,8 +2,6 @@ import { useNavigate } from 'react-router';
 
 import styles from "../css/About.module.css"
 
-import BookLink from "./BookLink";
-
 import CompanyJSON from '../json/CompanyInfo.json';
 
 import scrollToTop from '../helpers/scrollToTop';

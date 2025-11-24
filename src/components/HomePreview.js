@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router';
 
-import styles from '../css/HomePreview.module.css';
 import ServiceCardStyles from '../css/ServiceCard.module.css';
 
 import ServicesJson from '../json/Services.json';

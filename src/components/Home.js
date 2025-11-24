@@ -9,8 +9,6 @@ import BookPreview from './BookPreview';
 import Testimonials from './Testimonials';
 
 export default function Home() {
-    const navigate = useNavigate();
-
     // Group images by engine (e.g., unity, unreal, etc.)
     const grouped = images.images.reduce((acc, img) => {
         const group = img.service || 'other';
