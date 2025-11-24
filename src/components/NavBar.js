@@ -7,6 +7,8 @@ import BannerStyles from '../css/Banner.module.css';
 
 import CompanyJSON from '../json/CompanyInfo.json';
 
+import scrollToTop from '../helpers/scrollToTop';
+
 export default function NavBar() {
     const navigate = useNavigate();
     const [isOpen, setIsOpen] = useState(false);
@@ -46,39 +48,39 @@ export default function NavBar() {
                 </Link>
                 <button
                     className={`${getActiveClass(`/`)} ${isOpen ? "" : "hidden"}`}
-                    onClick={() => navigate(`/`)}
+                    onClick={() => {navigate(`/`); scrollToTop();}}
                 >
                     Home
                 </button>
-                <button
+                {/* <button
                     className={`${getActiveClass(`/services`)} ${isOpen ? "" : "hidden"}`}
-                    onClick={() => navigate(`/services`)}
+                    onClick={() => {navigate(`/services`); scrollToTop();}}
                 >
                     Services
-                </button>
-                { CompanyJSON.bonusContent &&
-                    <button
-                        className={`${getActiveClass(`/bonus`)} ${isOpen ? "" : "hidden"}`}
-                        onClick={() => navigate(`/bonus`)}
-                    >
-                        Bonus Content
-                    </button>
-                }
+                </button> */}
                 <button
                     className={`${getActiveClass(`/book`)} ${isOpen ? "" : "hidden"}`}
-                    onClick={() => navigate(`/book`)}
+                    onClick={() => {navigate(`/book`); scrollToTop();}}
                 >
                     {CompanyJSON.book.waitlist ? "Join Waitlist" : "Book Now"}
                 </button>
                 <button
                     className={`${getActiveClass(`/faq`)} ${isOpen ? "" : "hidden"}`}
-                    onClick={() => navigate(`/faq`)}
+                    onClick={() => {navigate(`/faq`); scrollToTop();}}
                 >
                     FAQs
                 </button>
+                { CompanyJSON.bonusContent &&
+                    <button
+                        className={`${getActiveClass(`/bonus`)} ${isOpen ? "" : "hidden"}`}
+                        onClick={() => {navigate(`/bonus`); scrollToTop();}}
+                    >
+                        Bonus Content
+                    </button>
+                }
                 <button
                     className={`${getActiveClass(`/about`)} ${isOpen ? "" : "hidden"}`}
-                    onClick={() => navigate(`/about`)}
+                    onClick={() => {navigate(`/about`); scrollToTop();}}
                 >
                     About
                 </button>

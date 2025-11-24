@@ -1,12 +1,12 @@
 import { useNavigate } from 'react-router';
 
 import ImageMarquee from './ImageMarquee';
-import FeaturedServices from './FeaturedServices';
-import AboutPreview from './AboutPreview';
-
-import scrollToTop from '../helpers/scrollToTop';
 
 import images from '../json/MarqueeImages.json';
+import HomePreview from './HomePreview';
+import ServiceList from './ServiceList';
+import BookPreview from './BookPreview';
+import Testimonials from './Testimonials';
 
 export default function Home() {
     const navigate = useNavigate();
@@ -47,23 +47,17 @@ export default function Home() {
     return (
         <>
             <ImageMarquee images={combinedImages} cycleTime={5} />
-            <div className='container'>
-                <h1 className="col-12 header">The Guild's Purpose</h1>
-                <p style={{fontSize: "1.8rem", textAlign: "center"}}>We help learners level up beyond generic tutorials through personalized guidance crafted for each unique development journey.</p>
-                <FeaturedServices />
-                <button
-                    className="wide center"
-                    onClick={() => {
-                        navigate('/services');
-                        scrollToTop();
-                    }}
-                    title="View all services"
-                    style={{ marginTop: '2rem' }}
-                >
-                    View All Services
-                </button>
-                {/* <hr /> */}
-                <AboutPreview />
+            <div className='section'>
+                <HomePreview />
+            </div>
+            <div className='section' style={{backgroundColor: 'var(--lightest-primary-color)'}}>
+                <ServiceList showUpcoming={false} secondaryHeader={false} marginTop={false} />
+            </div>
+            <div className='section' style={{backgroundColor: 'var(--light-secondary-color)'}}>
+                <Testimonials marginTop={false} />
+            </div>
+            <div className='section'>
+                <BookPreview />
             </div>
         </>
     );

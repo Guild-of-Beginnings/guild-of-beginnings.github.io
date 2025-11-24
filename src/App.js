@@ -23,25 +23,25 @@ import CompanyJSON from './json/CompanyInfo.json'
 function App() {
     return(
         <>
+            <NavBar />
             <ErrorBoundary fallback="An error has occurred. Please ensure JavaScript is enabled in your browser and either refresh the page or try again later.">
-                <NavBar />
-                    <Routes>
-                        <Route index element={<Home />} />
-                        <Route path="services" element={<Services />} />
-                        <Route path="services/:id" element={<Service />} />
-                        <Route path={CompanyJSON.privacyPolicy.policyUrl} element={<PrivacyPolicy />} />
-                        <Route path="faq" element={<FAQ />} />
-                        <Route path="book" element={<Book />} />
-                        <Route path="about" element={<About />} />
-                        <Route path="nfc" element={<NFC />} />
-                        <Route path="bonus" element={<BonusContentList />} />
-                        <Route path="bonus/:id" element={<BonusContent />} />
-                        {/* Add more routes as needed */}
-                        <Route path="*" element={<Error404 />} />
-                    </Routes>
-                    <JumpToTopButton />
-                <Footer />
+                <Routes>
+                    <Route index element={<Home />} />
+                    <Route path="services" element={<Services />} />
+                    <Route path="services/:id" element={<Service />} />
+                    <Route path={CompanyJSON.privacyPolicy.policyUrl} element={<PrivacyPolicy />} />
+                    <Route path="faq" element={<FAQ />} />
+                    <Route path="book" element={<Book />} />
+                    <Route path="about" element={<About />} />
+                    <Route path="nfc" element={<NFC />} />
+                    <Route path="bonus" element={<BonusContentList />} />
+                    <Route path="bonus/:id" element={<BonusContent />} />
+                    {/* Add more routes as needed */}
+                    <Route path="*" element={<Error404 />} />
+                </Routes>
             </ErrorBoundary>
+            <JumpToTopButton />
+            <Footer />
         </>
     );
 }

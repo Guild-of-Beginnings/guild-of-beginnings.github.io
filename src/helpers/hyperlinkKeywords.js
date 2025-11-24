@@ -22,12 +22,12 @@ export default function UseHyperlinkKeywords(nodes) {
         while (remaining.length > 0) {
             let found = false;
 
-            for (const { keyword, link, enabled } of keywords) {
+            for (const { keyword, link, tooltip, enabled } of keywords) {
                 if (!enabled) continue;
 
                 if (remaining.startsWith(keyword)) {
                     result.push(
-                        <Link key={`${idx}-${result.length}`} to={link} onClick={scrollToTop}>
+                        <Link key={`${idx}-${result.length}`} to={link} onClick={scrollToTop} title={tooltip ? tooltip : ''}>
                             {keyword}
                         </Link>
                     );

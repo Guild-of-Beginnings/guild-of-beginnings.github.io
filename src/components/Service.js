@@ -1,4 +1,4 @@
-import { useParams } from "react-router";
+import { useParams, useNavigate } from "react-router";
 
 import styles from '../css/Service.module.css'
 
@@ -13,7 +13,11 @@ import currencyFormat from "../helpers/currencyFormat";
 import ServicesJson from '../json/Services.json';
 import ServiceImagesJson from '../json/MarqueeImages.json';
 
+import scrollToTop from '../helpers/scrollToTop';
+
 export default function Service() {
+    const navigate = useNavigate();
+
     const { id } = useParams();
     const details = ServicesJson.services.find(x => String(x.id) === id);
 
@@ -40,9 +44,17 @@ export default function Service() {
         <>
             <ImageMarquee images={images} useSubtitle2={false} useLinks={false}/>
 
-            <div className="container">
+            <div className="container margin-bottom-3">
                 <h1 className={`col-12 header`}>{details.name}</h1>
                 <h2 className={`col-12 header`}>{details.subtitle}</h2>
+
+                <button
+                    className={`extra-wide center ${styles['home-cta-button']}`}
+                    onClick={() => {navigate(`/book`); scrollToTop()}}
+                >
+                    Click here to begin your journey today!
+                </button>
+                
                 <div className="row">
                     <div>
                         {Array.isArray(details.description) ? (
@@ -67,7 +79,7 @@ export default function Service() {
                                 <ExplanationDropdown key={i} json={benefit} />
                             ))}
                         </div>
-                        
+
                         <div className={styles["explanation-group"]} >
                             <h5 className={"col-12 mt-3 " + styles["service-header"]}>Topics Covered:</h5>
                             {details.topics.map((topic, i) => (
@@ -76,13 +88,21 @@ export default function Service() {
                         </div>
                         
                         <div className={styles["explanation-group"]} >
-                            <h5 className={`col-12 mt-3 ${styles["service-cost"]}`}>Optional Addons:</h5>
+                            <h5 className={`col-12 mt-3 ${styles["service-cost"]}`}>Optional Add-ons:</h5>
                             {ServicesJson['addons'].map((addon, i) => (
                                 <CostExplanationDropdown key={i} json={addon} price={addon.price} />
                             ))}
                         </div>
                     </div>
                 </div>
+
+                <h1 className={`col-12 header no-margin-top`}>Ready to begin your journey?</h1>
+                <button
+                    className={`extra-wide center`}
+                    onClick={() => {navigate(`/book`); scrollToTop()}}
+                >
+                    Click here to start today!
+                </button>
             </div>
         </>
     );

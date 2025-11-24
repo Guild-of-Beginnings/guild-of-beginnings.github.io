@@ -33,7 +33,7 @@ export default function CostExplanationDropdown({json, price, discount = 0}) {
                     <div className={`${styles["dropdown-text-no-margin"]}`}>
                         <p>{parseBoldText(json.description)}</p>
                         { json['show-total'] &&
-                            <h5 className='no-underline'><Link to={"/book"}>Total Price: ${price - (price * discount)}</Link></h5>
+                            <h5 className='no-underline'><Link to={"/book"}>Add-on Price: ${price - (price * discount)}</Link></h5>
                         }
                     </div>
                 </>

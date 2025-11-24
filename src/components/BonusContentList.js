@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router';
 import { Link } from 'react-router-dom';
 import matter from 'front-matter';
 
@@ -7,7 +8,11 @@ import ImageMarquee from './ImageMarquee';
 import BonusJSON from '../json/BonusContent.json';
 import images from '../json/MarqueeImages.json';
 
+import scrollToTop from '../helpers/scrollToTop';
+
 export default function BonusContentList() {
+    const navigate = useNavigate();
+
     const [bonusEntries, setBonusEntries] = useState([]);
 
     // Fetch markdown metadata for each entry
@@ -94,7 +99,7 @@ export default function BonusContentList() {
     return (
         <>
             <ImageMarquee images={combinedImages} cycleTime={5} />
-            <div className="container">
+            <div className="container margin-bottom-3">
                 <h1 className="col-12 header">Free Bonus Content</h1>
                 
                 {bonusEntries.map((categoryObj) => (
@@ -117,6 +122,14 @@ export default function BonusContentList() {
                         </table>
                     </div>
                 ))}
+
+                <h1 className={`col-12 header no-margin-top`}>Ready to begin your journey?</h1>
+                <button
+                    className={`extra-wide center`}
+                    onClick={() => {navigate(`/book`); scrollToTop()}}
+                >
+                    Click here to start today!
+                </button>
             </div>
         </>
     );

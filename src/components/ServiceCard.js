@@ -10,7 +10,12 @@ export default function ServiceCard({ service, clickable = true }) {
     return (
         <div key={service.id}
             className={`hover-lift ${ServiceCardStyles["service-card"]}`}
-            onClick={() => clickable && navigate(`/services/${service.id}`)}
+            onClick={() => {
+                if (!clickable) return;
+                
+                navigate(`/services/${service.id}`);
+                scrollToTop();
+            }}
             title={`Learn more about ${service.name}`}
             style={{ cursor: (clickable ? 'pointer' : 'default') }}
         >

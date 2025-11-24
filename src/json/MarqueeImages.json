@@ -4,35 +4,35 @@
             "image": "/images/Banner/UnityPhysics.png",
             "service": "unity",
             "subtitle": "Learn Physics",
-            "subtitle-2": "in Unity 101",
+            "subtitle-2": "in Scrolls of Unity",
             "alt-text": "A race track with four cars (red, yellow, silver, and purple colors) driving on the track, showcasing physics in the Unity Engine"
         },
         {
             "image": "/images/Banner/UnityAI.png",
             "service": "unity",
             "subtitle": "Learn Game AI",
-            "subtitle-2": "in Unity 101",
+            "subtitle-2": "in Scrolls of Unity",
             "alt-text": "Three medieval guard non-player characters (NPCs) gathered around a campfire at a dock after dark"
         },
         {
             "image": "/images/Banner/Animation.png",
             "service": "unity",
             "subtitle": "Learn Animation",
-            "subtitle-2": "in Unity 101",
+            "subtitle-2": "in Scrolls of Unity",
             "alt-text": "A low-poly campfire with fire particles and smoke, showcasing animation in the Unity Engine"
         },
         {
             "image": "/images/Banner/CSharp.png",
             "service": "unity",
             "subtitle": "Learn C# Programming",
-            "subtitle-2": "in Unity 101",
+            "subtitle-2": "in Scrolls of Unity",
             "alt-text": "A snippet of C# code showing a partial function for calculating a player's score in a game, demonstrating C# programming in the Unity Engine"
         },
         {
             "image": "/images/Banner/VersionControl.png",
             "service": "unity",
             "subtitle": "Learn Version Control",
-            "subtitle-2": "in Unity 101",
+            "subtitle-2": "in Scrolls of Unity",
             "alt-text": "A screenshot of a GitHub repository shown in GitKraken with sample commit history, demonstrating version control"
         }
 
@@ -41,35 +41,35 @@
             "image": "/images/Banner/UEPhysics.png",
             "service": "unreal",
             "subtitle": "Learn Physics",
-            "subtitle-2": "in Unreal 101",
+            "subtitle-2": "in Scrolls of Unreal",
             "alt-text": "Two soccer players in a stadium, one kicking a soccer ball and one diving to block the ball, showcasing physics in the Unreal Engine"
         },
         {
             "image": "/images/Banner/UEGameAI2.png",
             "service": "unreal",
             "subtitle": "Learn Game AI",
-            "subtitle-2": "in Unreal 101",
+            "subtitle-2": "in Scrolls of Unreal",
             "alt-text": "A dimly lit dungeon scene with one main character blocking attacks from a large boss character and two minions dressed in robes, showcasing game AI in the Unreal Engine"
         },
         {
             "image": "/images/Banner/UEAnimation.png",
             "service": "unreal",
             "subtitle": "Learn Animation",
-            "subtitle-2": "in Unreal 101",
+            "subtitle-2": "in Scrolls of Unreal",
             "alt-text": "A screenshot of a sample animation blueprint graph in Unreal Engine, detailing the animation logic for a breakdancing character, showcasing animation in the Unreal Engine"
         },
         {
             "image": "/images/Banner/UECppAndBlueprints.png",
             "service": "unreal",
             "subtitle": "Learn Programming",
-            "subtitle-2": "in Unreal 101",
+            "subtitle-2": "in Scrolls of Unreal",
             "alt-text": "A screenshot of Unreal Engine blueprint code , showing a function for directing a pawn to do an action, showcasing programming in the Unreal Engine"
         },
         {
             "image": "/images/Banner/VersionControl.png",
             "service": "unreal",
             "subtitle": "Learn Version Control",
-            "subtitle-2": "in Unreal 101",
+            "subtitle-2": "in Scrolls of Unreal",
             "alt-text": "A screenshot of a GitHub repository shown in GitKraken with sample commit history, demonstrating version control"
         }
 
@@ -78,35 +78,35 @@
             "image": "/images/Banner/UEPhysics.png",
             "service": "default",
             "subtitle": "Learn Physics",
-            "subtitle-2": "in Unreal 101",
+            "subtitle-2": "in Scrolls of Unreal",
             "alt-text": "Two soccer players in a stadium, one kicking a soccer ball and one diving to block the ball, showcasing physics in the Unreal Engine"
         },
         {
             "image": "/images/Banner/UEGameAI2.png",
             "service": "default",
             "subtitle": "Learn Game AI",
-            "subtitle-2": "in Unreal 101",
+            "subtitle-2": "in Scrolls of Unreal",
             "alt-text": "A dimly lit dungeon scene with one main character blocking attacks from a large boss character and two minions dressed in robes, showcasing game AI in the Unreal Engine"
         },
         {
             "image": "/images/Banner/UEAnimation.png",
             "service": "default",
             "subtitle": "Learn Animation",
-            "subtitle-2": "in Unreal 101",
+            "subtitle-2": "in Scrolls of Unreal",
             "alt-text": "A screenshot of a sample animation blueprint graph in Unreal Engine, detailing the animation logic for a breakdancing character, showcasing animation in the Unreal Engine"
         },
         {
             "image": "/images/Banner/UECppAndBlueprints.png",
             "service": "default",
             "subtitle": "Learn Programming",
-            "subtitle-2": "in Unreal 101",
+            "subtitle-2": "in Scrolls of Unreal",
             "alt-text": "A screenshot of Unreal Engine blueprint code , showing a function for directing a pawn to do an action, showcasing programming in the Unreal Engine"
         },
         {
             "image": "/images/Banner/VersionControl.png",
             "service": "default",
             "subtitle": "Learn Version Control",
-            "subtitle-2": "in Unreal 101",
+            "subtitle-2": "in Scrolls of Unreal",
             "alt-text": "A screenshot of a GitHub repository shown in GitKraken with sample commit history, demonstrating version control"
         }
     ]

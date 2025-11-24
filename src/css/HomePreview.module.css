@@ -1,0 +1,42 @@
+.home-image {
+    /* width: 100%; */
+    border-radius: 2rem;
+    /* border: 1px solid; */
+    flex: 0 0 auto;
+    width: 30%;
+    height: 100%;
+    float: left;
+    margin: 0 2rem 2rem 0;
+}
+
+.home-section {
+    height: 100%;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+.home-section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+h1.about {
+    text-align: center;
+    margin: 2rem auto;
+}
+
+.home-connect {
+    width: 100%;
+    display: flex;
+}
+
+button.home-cta-button {
+    font-size: 1.5rem !important;
+}
+
+@media (max-width: 767px) {
+    .home-image {
+        width: 40% !important;
+        /* border-radius: 10rem; */
+    }
+}

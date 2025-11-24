@@ -11,7 +11,7 @@ export default function FAQ() {
 
     return (
         <>
-            <div className='container'>
+            <div className='container margin-bottom-3'>
                 <h1 className='header'>Frequently Asked Questions (FAQs)</h1>
                 <div className={`${styles['faq']}`}>
                     {

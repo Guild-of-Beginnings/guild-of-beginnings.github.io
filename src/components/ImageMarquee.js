@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
-import styles from '../css/ImageMarquee.module.css'; // Update with your actual CSS file
+import styles from '../css/ImageMarquee.module.css';
 
 const ImageMarquee = ({ images, useSubtitle2 = true, useLinks = true, cycleTime = 5 }) => {
     const [index, setIndex] = useState(0);

@@ -1,14 +1,14 @@
 .services {
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 5rem;
     justify-content: center;
     max-width: 100%;
     margin: 2rem auto;
 }
 
 .service-card {
-    width: 25rem;
+    width: 30rem;
     min-height: 28rem;
     position: relative;
     padding: 1.5rem;
@@ -20,26 +20,16 @@
     color: var(--primary-color);
     text-align: center;
     border-radius: 1rem;
-
-    /* background-image: url("../textures/scroll.png"); */
-    /* background-size: 100% 100%; */
-    /* background-repeat: no-repeat; */
-    /* background-position: center; */
 }
-/* .service-card:hover {
-  filter: brightness(0.9);
-} */
 .service-card h3 {
     margin-top: 0.5rem;
     margin-bottom: 1.5rem;
-    /* margin-bottom: 1rem; */
     font-weight: bold;
     font-size: 1.7rem;
 }
 .service-card button {
     position: absolute;
     bottom: 2rem;
-    /* bottom: 2.7rem; */
     left: 50%;
     transform: translateX(-50%);
     background-color: var(--primary-color);
@@ -70,13 +60,9 @@
 
 .featured-service {
     width: 100%;
-    /* width: 80%; */
     margin: 0 auto;
     border-radius: 1rem;
     padding: 4rem;
-}
-.featured-service h1 {
-    /* margin: 2rem auto; */
 }
 .featured-service h2 {
     color: var(--primary-color);

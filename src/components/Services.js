@@ -7,7 +7,7 @@ export default function Services() {
     return (
         <>
             <ImageMarquee images={images.images} cycleTime={5} />
-            <div className='container'>
+            <div className='container margin-bottom-3'>
                 <ServiceList />
             </div>
         </>

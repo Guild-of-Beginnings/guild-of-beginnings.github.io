@@ -57,7 +57,7 @@ export default function BonusContent() {
       }, [id]);
 
       return (
-        <div className="container">
+        <div className="container margin-bottom-3">
             <article className="blog-post">
                 <h1 className={`col-12 header`}>{data.title}</h1>
                 <p style={{marginBottom: "0"}}><strong>Posted:</strong> {data.date}</p>

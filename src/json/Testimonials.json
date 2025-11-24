@@ -1,0 +1,14 @@
+{
+    "testimonials": [
+        {
+            "client": "Mercy K.",
+            "learning-path": "Scrolls of Unreal (Blueprint)",
+            "statement": "When I began my weekly tutoring sessions with Robert, I knew next to nothing about programming or working with Unreal engine. In 18 weeks, I have learned so much! Even my game design skills (which I felt more confident about going into this) have improved substationally! There are things you can get with 'one on one tutoring' that you just can't get from a YouTube video or an online forum if you have a good tutor. Lucky for me, Robert is knowledgeable, patient, and never ever made me feel judged. He freely shared his experiences and mishaps (learning experiences) from his background working in both education and on AAA titles. He helped me feel so much more comfortable and accepting about my own learning process. I can't recommend his tutoring services enough. And Robert? I'm putting you in the \"And a special thanks to\" credits of my first indie game!"
+        },
+        {
+            "client": "Shawn K.",
+            "learning-path": "Scrolls of Unity",
+            "statement": "I enjoyed the Guild of Beginnings game development course. The lessons were very tailored to what topics I wanted to learn, and the steps needed to accomplish my goals. In the first meeting I had a one-on-one conversation with my instructor. I answered some questions, we talked about my interests, and I got an overview of what the course was going to be. The number of topics that I needed to learn seemed like a lot, but the instructor assured me that the course load would be adjusted based on my performance.\nEach lesson started with a quick chat about the previous lesson. He did these regular check-ins to make sure that I understood the main points from the last lesson and to give me a chance to ask any follow-up questions. From there he would explain any terminology or definitions that I needed to know. Then we jumped right into a demonstration of the current topic. He gave me the choice: to watch and take notes or follow along with the demonstration. At first, I followed along with the demonstration, but once I became more familiar with the tools we were using, I switched to watch and take notes.\nHe showed me several free online resources and demonstrated how to use them. He gave me recommendations on what to use without insisting that I ignore all other options. The lessons were well structured, he promptly answered my questions outside of regular meeting times, and he showed genuine interest in whatever topic I was struggling with. Overall, the lessons were good, and the instructor was engaging. I would recommend this course to people who are already familiar with programming and want to get into game development."
+        }
+    ]
+}

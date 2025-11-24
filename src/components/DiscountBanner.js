@@ -2,7 +2,7 @@ import { Link } from 'react-router';
 
 import styles from '../css/DiscountBanner.module.css'
 
-export default function Book() {
+export default function DiscountBanner() {
     return (
         <>
             <Link

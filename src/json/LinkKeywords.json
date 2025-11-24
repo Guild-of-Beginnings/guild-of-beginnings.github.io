@@ -12,17 +12,26 @@
         },
         {
             "keyword": "Discord",
-            "link": "/book",
+            "link": "https://discord.gg/UKjBpKSPWB",
+            "tooltip": "Join our Discord commmunity!",
             "enabled": true
         },
         {
             "keyword": "phone",
-            "link": "/book",
+            "link": "tel:+14242313756",
+            "tooltip": "Call us at +1 (424) 231-3756",
             "enabled": true
         },
         {
             "keyword": "email",
-            "link": "/book",
+            "link": "mailto:schedule@guildofbeginnings.com",
+            "tooltip": "Email us at schedule@guildofbeginnings.com",
+            "enabled": true
+        },
+        {
+            "keyword": "support email",
+            "link": "mailto:support@guildofbeginnings.com",
+            "tooltip": "Email us at support@guildofbeginnings.com",
             "enabled": true
         },
         {
