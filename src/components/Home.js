@@ -1,5 +1,3 @@
-import { useNavigate } from 'react-router';
-
 import ImageMarquee from './ImageMarquee';
 
 import images from '../json/MarqueeImages.json';
