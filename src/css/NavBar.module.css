@@ -2,14 +2,7 @@
     position: sticky;
     top: 0;
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    padding: 0.5rem;
     background-color: var(--primary-color);
-    justify-content: space-evenly;
-    align-items: center;
-    /* margin-bottom: 2rem; */
     z-index: 10;
 }
 .navbar img {
@@ -32,22 +25,37 @@
     line-height: 1.6;
     letter-spacing: 0.05rem;
 }
+.navbar-inner {
+    position: relative;
+    display: flex;
+    /* flex-wrap: wrap; */
+    gap: 1rem;
+    padding: 0.5rem;
+    justify-content: space-evenly;
+    align-items: center;
+}
 .navbar-toggle {
     position: absolute;
-    right: 2rem;
-    top: 2rem;
+    right: 1.5rem;
+    top: 50%;
     transform: translateY(-50%);
-    width: 2rem;
+    width: 5rem;
     visibility: hidden;
     background: none;
+    z-index: 11;
 }
-@media(max-width: 1024px) {
-    .navbar {
+.navbar-toggle.open {
+    background-color: var(--secondary-color);
+    top: 2rem !important;
+}
+/* @media(max-width: 1024px) { */
+@media(max-width: 1154px) {
+    .navbar, .navbar-inner {
         flex-direction: column;
         width: 100%;
         gap: 1rem;
     }
-    .navbar button {
+    .navbar-button {
         width: 50%;
     }
     .navbar-toggle {
@@ -55,19 +63,23 @@
     }
 }
 @media(max-width: 767px) {
-    .navbar button {
-        width: 100%;
+    .navbar-button {
+        width: 70%;
     }
 }
 @media (max-width: 500px) {
+    .navbar {
+        width: 100%;
+    }
     .navbar a {
         width: 90%;
+        /* display:; */
     }
     .navbar h1 {
         text-align: center;
         width: 70%;
     }
-    .navbar button {
+    .navbar-button {
         width: 50%;
     }
 }

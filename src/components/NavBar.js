@@ -14,7 +14,7 @@ export default function NavBar() {
     const [isOpen, setIsOpen] = useState(false);
     useEffect(() => {
         const handleResize = () => {
-            if (window.innerWidth > 1024) {
+            if (window.innerWidth > 1154) {
                 setIsOpen(true);
             } else {
                 setIsOpen(false);
@@ -35,8 +35,8 @@ export default function NavBar() {
     const toggleMenu = () => setIsOpen(!isOpen);
 
     return (
-        <>
-            <div className={`${styles.navbar}`}>
+        <div className={`${styles.navbar}`}>
+            <div className={styles['navbar-inner']}>
                 <Link to={"/"}>
                     <img
                         src={`${process.env.PUBLIC_URL}/GameTutorLogo2.png`}
@@ -47,50 +47,44 @@ export default function NavBar() {
                     <h1 className='logo'>{CompanyJSON.name}</h1>
                 </Link>
                 <button
-                    className={`${getActiveClass(`/`)} ${isOpen ? "" : "hidden"}`}
+                    className={`${styles['navbar-button']} ${getActiveClass(`/`)} ${isOpen ? "" : "hidden"}`}
                     onClick={() => {navigate(`/`); scrollToTop();}}
                 >
                     Home
                 </button>
-                {/* <button
-                    className={`${getActiveClass(`/services`)} ${isOpen ? "" : "hidden"}`}
-                    onClick={() => {navigate(`/services`); scrollToTop();}}
-                >
-                    Services
-                </button> */}
                 <button
-                    className={`${getActiveClass(`/book`)} ${isOpen ? "" : "hidden"}`}
+                    className={`${styles['navbar-button']} ${getActiveClass(`/book`)} ${isOpen ? "" : "hidden"}`}
                     onClick={() => {navigate(`/book`); scrollToTop();}}
                 >
                     {CompanyJSON.book.waitlist ? "Join Waitlist" : "Book Now"}
                 </button>
                 <button
-                    className={`${getActiveClass(`/faq`)} ${isOpen ? "" : "hidden"}`}
+                    className={`${styles['navbar-button']} ${getActiveClass(`/faq`)} ${isOpen ? "" : "hidden"}`}
                     onClick={() => {navigate(`/faq`); scrollToTop();}}
                 >
                     FAQs
                 </button>
                 { CompanyJSON.bonusContent &&
                     <button
-                        className={`${getActiveClass(`/bonus`)} ${isOpen ? "" : "hidden"}`}
+                        className={`${styles['navbar-button']} ${getActiveClass(`/bonus`)} ${isOpen ? "" : "hidden"}`}
                         onClick={() => {navigate(`/bonus`); scrollToTop();}}
                     >
-                        Bonus Content
+                        Bonus
                     </button>
                 }
                 <button
-                    className={`${getActiveClass(`/about`)} ${isOpen ? "" : "hidden"}`}
+                    className={`${styles['navbar-button']} ${getActiveClass(`/about`)} ${isOpen ? "" : "hidden"}`}
                     onClick={() => {navigate(`/about`); scrollToTop();}}
                 >
                     About
                 </button>
+                <button
+                    className={`${styles['navbar-toggle']} ${isOpen ? styles['open'] : ""}`}
+                    onClick={() => toggleMenu()}
+                >
+                    <span className="hamburger-icon">&#9776;</span>
+                </button>
             </div>
-            <button
-                className={styles['navbar-toggle']}
-                onClick={() => toggleMenu()}
-            >
-                <span className="hamburger-icon">&#9776;</span>
-            </button>
-        </>
+        </div>
     );
 }
