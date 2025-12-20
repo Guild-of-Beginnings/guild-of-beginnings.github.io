@@ -326,4 +326,15 @@ code {
         min-width: 500px;
         width: 100%;
     }
+
+    .container {
+        padding: 0rem 2rem;
+    }
+
+    .section {
+        padding: 3rem 2rem;
+    }
+    .section .container {
+        padding: 0;
+    }
 }
