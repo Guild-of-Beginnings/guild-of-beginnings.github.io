@@ -26,7 +26,14 @@ export default function Footer() {
                                     src={`${process.env.PUBLIC_URL}${CompanyJSON.logoWhiteUrl}`}
                                     alt="Logo"
                                     />
-                                <h1 className='logo'>{CompanyJSON.name}</h1>
+                                {/* <h1 className='logo'>{CompanyJSON.name}</h1> */}
+
+                                <img
+                                    src={`${process.env.PUBLIC_URL}${CompanyJSON.nameUrl}`}
+                                    className='logo'
+                                    alt="Logo"
+                                    style={{ height: "2rem", width: "100%", margin: "auto" }}
+                                />
                         </div>
                         <p>Ready to make your dream game a reality? {CompanyJSON.name} offers one-on-one tutoring tailored to your goals. {CompanyJSON.book.waitlist ? "Reserve your spot on our waitlist today!" : "Book your first session today and start building with confidence!"}</p>
                     </div>

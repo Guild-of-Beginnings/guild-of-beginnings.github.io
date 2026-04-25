@@ -34,7 +34,8 @@
         "reddit": "https://www.reddit.com/user/guildofbeginnings"
     },
     "bonusContent": true,
-    "logoUrl": "/images/logo.png",
-    "logoWhiteUrl": "/GameTutorLogo2.png",
-    "faviconUrl": "/images/favicon.ico"
+    "logoUrl": "/images/GoBLogo_Idea_Cropped.jpg",
+    "nameUrl": "/images/GoBLogo_Idea_NameOnly.jpg",
+    "logoWhiteUrl": "/images/GoBLogo_Idea_Cropped.jpg",
+    "faviconUrl": "/images/GoBLogo_Idea_Cropped.jpg"
 }

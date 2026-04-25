@@ -4,7 +4,7 @@ import ServiceCardStyles from '../css/ServiceCard.module.css';
 
 import scrollToTop from '../helpers/scrollToTop';
 
-export default function ServiceCard({ service, clickable = true }) {
+export default function ServiceCard({ service, cbackgroundColor, clickable = true, externalLink = false }) {
     const navigate = useNavigate();
 
     return (
@@ -12,12 +12,22 @@ export default function ServiceCard({ service, clickable = true }) {
             className={`hover-lift ${ServiceCardStyles["service-card"]}`}
             onClick={() => {
                 if (!clickable) return;
+
+                console.log(externalLink);
+
+                if (externalLink) {
+                    window.open(service.link, "_blank", "noopener,noreferrer");
+                } else {
+                    navigate(`/services/${service.id}`);
+                }
                 
-                navigate(`/services/${service.id}`);
                 scrollToTop();
             }}
             title={`Learn more about ${service.name}`}
-            style={{ cursor: (clickable ? 'pointer' : 'default') }}
+            style={{
+                cursor: (clickable ? 'pointer' : 'default'),
+                backgroundColor: cbackgroundColor
+            }}
         >
             <h3>{service.name}</h3>
             <p>{service["short-description"]}</p>

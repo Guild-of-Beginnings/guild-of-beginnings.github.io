@@ -39,12 +39,17 @@ export default function NavBar() {
             <div className={styles['navbar-inner']}>
                 <Link to={"/"}>
                     <img
-                        src={`${process.env.PUBLIC_URL}/GameTutorLogo2.png`}
+                        src={`${process.env.PUBLIC_URL}${CompanyJSON.logoUrl}`}
                         alt="Logo"
                         className={BannerStyles.logo}
                         style={{ cursor: 'pointer' }}
                     />
-                    <h1 className='logo'>{CompanyJSON.name}</h1>
+                    <img
+                        src={`${process.env.PUBLIC_URL}${CompanyJSON.nameUrl}`}
+                        alt="Logo"
+                        className={BannerStyles.logo}
+                        style={{ cursor: 'pointer', height: "2rem" }}
+                    />
                 </Link>
                 <button
                     className={`${styles['navbar-button']} ${getActiveClass(`/`)} ${isOpen ? "" : "hidden"}`}

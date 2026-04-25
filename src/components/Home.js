@@ -5,6 +5,7 @@ import HomePreview from './HomePreview';
 import ServiceList from './ServiceList';
 import BookPreview from './BookPreview';
 import Testimonials from './Testimonials';
+import ServiceCard from './ServiceCard';
 
 export default function Home() {
     // Group images by engine (e.g., unity, unreal, etc.)
@@ -47,9 +48,35 @@ export default function Home() {
                 <HomePreview />
             </div>
             <div className='section' style={{backgroundColor: 'var(--lightest-primary-color)'}}>
-                <ServiceList showUpcoming={false} secondaryHeader={false} marginTop={false} />
+                <ServiceList cardBackgroundColor={"white"} showUpcoming={false} secondaryHeader={false} marginTop={false} />
             </div>
-            <div className='section' style={{backgroundColor: 'var(--light-secondary-color)'}}>
+            <div className='section'>
+                <div className='container'>
+                    <h1 className={`col-12 header`}>Trial of Code</h1>
+                    <p>Within the Trial of Code, adventurers may hone the skills forged in session, reinforcing their understanding through hands-on practice. Those who feel ready can also venture beyond familiar ground, testing themselves against new and uncharted challenges to further their mastery.</p>
+                    
+                    <div  style={{
+                    display: "flex",
+                    flexWrap: "wrap",
+                    gap: "5rem",
+                    justifyContent: "center",
+                    maxWidth: "100%",
+                    margin: "2rem auto"
+                }}>
+                    <ServiceCard
+                        cbackgroundColor={"var(--lightest-primary-color)"}
+                        service={{
+                            id: 'trials',
+                            name: "Trial of Code",
+                            link: "https://trials.guildofbeginnings.com",
+                            'short-description': "Test your skills in Trial of Code! Overcome practice problems in algorithms, math, object-oriented programming, and much more! (Preview option available)"
+                        }}
+                        externalLink={true}
+                    />
+                    </div>
+                </div>
+            </div>
+            <div className='section' style={{backgroundColor: 'var(--lightest-primary-color)'}}>
                 <Testimonials marginTop={false} />
             </div>
             <div className='section'>

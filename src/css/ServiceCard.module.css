@@ -15,7 +15,7 @@
     padding-bottom: 5rem;
     /* padding: 3rem 2rem 5rem 2rem; */
     cursor: pointer;
-    background-color: var(--light-secondary-color);
+    background-color: var(--lightest-primary-color);
     border: 1px solid var(--primary-color);
     color: var(--primary-color);
     text-align: center;

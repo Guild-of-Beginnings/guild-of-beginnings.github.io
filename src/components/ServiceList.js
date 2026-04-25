@@ -6,7 +6,7 @@ import ServiceCard from './ServiceCard';
 
 import ServicesJson from '../json/Services.json';
 
-export default function ServiceList({showUpcoming = true, secondaryHeader = false, marginTop = true}) {
+export default function ServiceList({cardBackgroundColor, showUpcoming = true, secondaryHeader = false, marginTop = true}) {
     const [services] = useState(ServicesJson.services);
     const [primaryServices] = useState(ServicesJson["primary-services"]);
     const [servicesComingSoon] = useState(ServicesJson["services-coming-soon"]);
@@ -21,7 +21,7 @@ export default function ServiceList({showUpcoming = true, secondaryHeader = fals
         <>
             <div className='container'>
             <h1 className={`col-12 header ${secondaryHeader ? 'secondary': ''} ${marginTop ? '' : 'no-margin-top'}`}>Guild Services</h1>
-            <p>Within the halls of the Guild, many paths await. Here you'll find the services currently offered to aspiring adventurers, with more disciplines soon to be unveiled!</p>
+            <p>Within the halls of the Guild, many paths await those who seek to begin, or continue, their journey. Here you'll find the services currently offered to aspiring adventurers, each designed to guide you through new skills, challenges, and discoveries. As the Guild grows, so too will its knowledge, with more disciplines and opportunities soon to be unveiled.</p>
             <div className={ServiceCardStyles["services"]}>
                 {primaryServices.map((id, i) => {
                     const service = getServiceById(id);
@@ -32,6 +32,7 @@ export default function ServiceList({showUpcoming = true, secondaryHeader = fals
                     return (
                         <ServiceCard
                             key={i}
+                            cbackgroundColor={cardBackgroundColor}
                             service={service}
                         />
                     );
@@ -51,6 +52,7 @@ export default function ServiceList({showUpcoming = true, secondaryHeader = fals
                     return (
                         <ServiceCard
                             key={id}
+                            cbackgroundColor={cardBackgroundColor}
                             service={service}
                             clickable={false}
                         />

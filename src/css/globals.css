@@ -12,16 +12,16 @@
     --button-color: var(--secondary-color);
 
     --palette-blue: #369cb9;
-    --palette-blue: #5dd0f0;
-    --palette-light-blue: #7ee3ff;
-    --palette-dark-blue: #084366;
-    --palette-orange: #f68e47;
-    --palette-light-orange: #f7c090;
-    --palette-lightest-orange: #ffdaba;
+    --palette-blue: #9378f7;
+    --palette-light-blue: #9cd1ff;
+    --palette-dark-blue: #033E8C;
+    --palette-orange: #9378f7;
+    --palette-light-orange: #c1afff;
+    --palette-lightest-orange: #c2b2fd;
     --palette-red: #bb392f;
     --palette-white: #F5F5F5;
     --palette-lavender: #A7A8D9;
-    --palette-purple: #6A0DAD;
+    --palette-purple: #5532d3;
     --palette-rich-lavender: #bd67f7;
     --palette-light-purple: #E6D6FF;
     
@@ -142,6 +142,7 @@ h2 {
     color: var(--secondary-color);
     /* font-family: "IM Fell English SC", serif !important; */
     font-size: 2.2rem;
+    font-weight: bold;
 }
 h2.header {
     text-align: center;
@@ -209,6 +210,9 @@ button.secondary:hover {
 button.accent-border {
     border: 1px solid var(--secondary-color) !important;
 }
+button p {
+    color: var(--light-secondary-color);
+}
 
 .button-row {
   display: flex;
@@ -219,7 +223,7 @@ button.accent-border {
 }
 
 a {
-    color: var(--secondary-color);
+    color: var(--palette-purple);
 }
 a:hover {
     text-decoration-line: underline;

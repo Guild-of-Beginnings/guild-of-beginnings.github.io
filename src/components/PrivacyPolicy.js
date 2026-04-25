@@ -79,7 +79,7 @@ export default function PrivacyPolicy() {
                 <p>To exercise any of these rights, please contact us using the contact information provided below.</p>
 
                 <h3>Limitations on Deletion Requests</h3>
-                <p>While we respect your right to request deletion, certain data (such as scheduling records or progress tracking) is essential to provide ongoing tutoring. If you request deletion of this data, we may be unable to continue delivering our services.</p>
+                <p>While we respect your right to request deletion, certain data (such as scheduling records or progress tracking) is essential to provide ongoing tutoring. If you request deletion of this data, we may be unable to continue delivering our services. Upon removing personally identifiable information, we may retain anonymized aggregate analytics for product improvement, provided it cannot be linked back to you.</p>
                 <p>Furthermore, we are required under U.S. federal and state laws to retain certain transaction and business records for legal and tax purposes. Specifically:</p>
                 <ul>
                     <li>We must retain records of all financial transactions for a minimum of 3 years to comply with IRS regulations.</li>
