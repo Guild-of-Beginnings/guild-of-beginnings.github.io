@@ -47,7 +47,7 @@ export default function Home() {
             <div className='section'>
                 <HomePreview />
             </div>
-            <div className='section' style={{backgroundColor: 'var(--lightest-primary-color)'}}>
+            <div className='section' style={{backgroundColor: 'var(--light-primary-color)'}}>
                 <ServiceList cardBackgroundColor={"white"} showUpcoming={false} secondaryHeader={false} marginTop={false} />
             </div>
             <div className='section'>
@@ -64,7 +64,7 @@ export default function Home() {
                     margin: "2rem auto"
                 }}>
                     <ServiceCard
-                        cbackgroundColor={"var(--lightest-primary-color)"}
+                        cbackgroundColor={"var(--light-primary-color)"}
                         service={{
                             id: 'trials',
                             name: "Trial of Code",
@@ -76,7 +76,7 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-            <div className='section' style={{backgroundColor: 'var(--lightest-primary-color)'}}>
+            <div className='section' style={{backgroundColor: 'var(--light-primary-color)'}}>
                 <Testimonials marginTop={false} />
             </div>
             <div className='section'>
