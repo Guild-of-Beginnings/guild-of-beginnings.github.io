@@ -3,9 +3,19 @@
   "name": "Guild of Beginnings | Start Your Game Dev Journey Today!",
   "icons": [
     {
-      "src": "WebIcon.png",
+      "src": "WebIcon128.png",
       "type": "image/png",
       "sizes": "128x128"
+    },
+    {
+      "src": "WebIcon192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "WebIcon.png",
+      "type": "image/png",
+      "sizes": "512x512"
     }
   ],
   "start_url": "/",
