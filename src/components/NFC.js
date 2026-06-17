@@ -38,7 +38,7 @@ export default function NFC() {
             <div className="container">
                 <div className={styles['nfc-container']}>
                     <div className={styles['nfc-info']}>
-                        <img src={`${process.env.PUBLIC_URL}/GoBLogoColor.png`} alt={`${CompanyJSON.name} Owner Headshot`} className={styles['nfc-image']} />
+                        <img src={`${process.env.PUBLIC_URL}${CompanyJSON.logoUrl}`} alt={`${CompanyJSON.name} Owner Headshot`} className={styles['nfc-image']} />
                         <h3><strong>Robert Lafferty</strong></h3>
                         <p>Owner, {CompanyJSON.name}</p>
                     </div>
