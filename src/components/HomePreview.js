@@ -26,7 +26,7 @@ export default function HomePreview() {
                         Embark on your journey into game development with our expert tutors as your guide! Together, we will focus together to complete your unique quests with tailored learning and practice. Begin crafting your first playable project within your first few weeks at a pace tailored to your adventure.
                     </p>
                     <button
-                        className={`extra-wide center`}
+                        className={`wide center`}
                         onClick={() => {navigate(`/book`); scrollToTop()}}
                         style={{ marginTop: '2rem' }}
                     >

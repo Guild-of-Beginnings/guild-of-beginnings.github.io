@@ -66,10 +66,10 @@ export default function Testimonials({ marginTop = true, cycleTime = 5 }) {
             </div>
 
             <button
-                className={`extra-wide center ${styles['home-cta-button']}`}
+                className={`wide center`}
                 onClick={() => {navigate(`/book`); scrollToTop()}}
             >
-                Click here to forge your own adventure!
+                Forge your own adventure today!
             </button>
         </div>
     );

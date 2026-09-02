@@ -31,7 +31,10 @@ export default function ServiceCard({ service, cbackgroundColor, clickable = tru
         >
             <h3>{service.name}</h3>
             <p>{service["short-description"]}</p>
-            <button style={{cursor: (clickable? 'pointer': 'default')}} onClick={scrollToTop}>{clickable ? "Learn More" : "Coming Soon"}</button>
+            { service.price &&
+                <p><b>Starting at ${service.price} / session</b></p>
+            }
+            <button className='wide' style={{cursor: (clickable? 'pointer': 'default')}} onClick={scrollToTop}>{clickable ? `Learn More` : "Coming Soon"}</button>
         </div>
     );
 }
