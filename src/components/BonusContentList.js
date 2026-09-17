@@ -126,7 +126,13 @@ export default function BonusContentList() {
                 <h1 className={`col-12 header no-margin-top`}>Ready to begin your journey?</h1>
                 <button
                     className={`extra-wide center`}
-                    onClick={() => {navigate(`/book`); scrollToTop()}}
+                    onClick={() => {
+                        window.gtag('event', 'booking_cta_click', {
+                            location: 'bonus'
+                        });
+                        navigate(`/book`);
+                        scrollToTop()
+                    }}
                 >
                     Click here to start today!
                 </button>

@@ -47,7 +47,13 @@ export default function About() {
                     
                     <button
                         className={`extra-wide center`}
-                        onClick={() => {navigate(`/book`); scrollToTop()}}
+                        onClick={() => {
+                            window.gtag('event', 'booking_cta_click', {
+                                location: 'about'
+                            });
+                            navigate(`/book`);
+                            scrollToTop()
+                        }}
                         style={{ marginTop: '2rem' }}
                     >
                         Click here to book your free consultation!

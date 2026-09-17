@@ -27,7 +27,11 @@ export default function HomePreview() {
                     </p>
                     <button
                         className={`wide center`}
-                        onClick={() => {navigate(`/book`); scrollToTop()}}
+                        onClick={() => {
+                            window.gtag('event', 'booking_cta_click_homepreview');
+                            navigate(`/book`);
+                            scrollToTop();
+                        }}
                         style={{ marginTop: '2rem' }}
                     >
                         Click here to begin your journey!

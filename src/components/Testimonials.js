@@ -67,7 +67,13 @@ export default function Testimonials({ marginTop = true, cycleTime = 5 }) {
 
             <button
                 className={`wide center`}
-                onClick={() => {navigate(`/book`); scrollToTop()}}
+                onClick={() => {
+                    window.gtag('event', 'booking_cta_click', {
+                        location: 'testimonials'
+                    });
+                    navigate(`/book`);
+                    scrollToTop();
+                }}
             >
                 Forge your own adventure today!
             </button>

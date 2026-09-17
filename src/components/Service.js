@@ -52,7 +52,13 @@ export default function Service() {
 
                 <button
                     className={`extra-wide center ${styles['home-cta-button']}`}
-                    onClick={() => {navigate(`/book`); scrollToTop()}}
+                    onClick={() => {
+                        window.gtag('event', 'booking_cta_click', {
+                            location: `services/${id}`
+                        });
+                        navigate(`/book`);
+                        scrollToTop();
+                    }}
                 >
                     Click here to begin your journey today!
                 </button>
@@ -101,7 +107,13 @@ export default function Service() {
                 <h1 className={`col-12 header no-margin-top`}>Ready to begin your journey?</h1>
                 <button
                     className={`extra-wide center`}
-                    onClick={() => {navigate(`/book`); scrollToTop()}}
+                    onClick={() => {
+                        window.gtag('event', 'booking_cta_click', {
+                            location: `services/${id}`
+                        });
+                        navigate(`/book`);
+                        scrollToTop()
+                    }}
                 >
                     Click here to start today!
                 </button>

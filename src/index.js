@@ -4,12 +4,15 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { HashRouter } from 'react-router-dom';
 
+import GoogleAnalytics from './components/GoogleAnalytics';
+
 import '@fontsource/inter'; // in your main JS file
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <HashRouter>
     {/* <React.StrictMode> */}
+      <GoogleAnalytics />
       <App />
     {/* </React.StrictMode> */}
   </HashRouter>
