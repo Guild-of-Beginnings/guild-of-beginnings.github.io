@@ -284,7 +284,8 @@
             "title": "Lesson Planning Fee",
             "description": "Lesson Planning Fee is a one-time fee to cover the time spent creating your personalized learning plan.",
             "price": 99,
-            "priceType": ""
+            "priceType": "",
+            "active": false
         }
     ]
 }

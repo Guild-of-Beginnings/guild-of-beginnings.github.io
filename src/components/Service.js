@@ -38,7 +38,7 @@ export default function Service() {
 
     const offers = ServicesJson["pricing-offers"].filter(offer => offer["currently-offered"]);
 
-    const lessonPlanningFee = ServicesJson.fees.find(fee => fee.title === "Lesson Planning Fee");
+    const lessonPlanningFee = ServicesJson.fees.find(fee => fee.title === "Lesson Planning Fee" && fee.active);
 
     return (
         <>
@@ -47,7 +47,7 @@ export default function Service() {
             <div className="container margin-bottom-3">
                 <h1 className={`col-12 header`}>{details.name}</h1>
                 <h3 style={{textAlign: "center", fontSize: "2.5rem"}}>{currencyFormat.format(details.price)} / Session*</h3>
-                <h3 style={{textAlign: "center", fontSize: "1.2rem"}}>+ one-time {currencyFormat.format(lessonPlanningFee.price)} {lessonPlanningFee.title}{lessonPlanningFee && <span className="default-font">**</span>}</h3>
+                {lessonPlanningFee && <h3 style={{textAlign: "center", fontSize: "1.2rem"}}>+ one-time {currencyFormat.format(lessonPlanningFee.price)} {lessonPlanningFee.title}{lessonPlanningFee && <span className="default-font">**</span>}</h3>}
                 <h2 className={`col-12 header`} style={{marginTop: "2rem"}}>{details.subtitle}</h2>
 
                 <button
