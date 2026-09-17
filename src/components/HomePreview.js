@@ -23,12 +23,14 @@ export default function HomePreview() {
                 <h1 className='col-12 header no-margin-top'>{CompanyJSON.name}</h1>
                 <div className={`${ServiceCardStyles["content"]}`}>
                     <p style={{textAlign: "center"}}>
-                        Embark on your journey into game development with our expert tutors as your guide! Together, we will focus together to complete your unique quests with tailored learning and practice. Begin crafting your first playable project within your first few weeks at a pace tailored to your adventure.
+                        Embark on your journey into game development with our expert tutors as your guide! Together, we will focus together to complete your unique quests with tailored learning and practice. Begin crafting your first playable project at a pace tailored to your adventure.
                     </p>
                     <button
                         className={`wide center`}
                         onClick={() => {
-                            window.gtag('event', 'booking_cta_click_homepreview');
+                            window.gtag('event', 'booking_cta_click', {
+                                location: 'homepreview'
+                            });
                             navigate(`/book`);
                             scrollToTop();
                         }}
